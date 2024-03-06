@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="../../fonts/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet"/>
+    <!-- TailwindCss -->
+    <link href="../../styles/output.css" rel="stylesheet" />
+    <!-- Css -->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="fixed w-full z-10 text-[10px] sm:text-[12px]">
+        <div class="relative w-full" data-carousel="slide">
+            <div class="relative h-10 overflow-hidden rounded-lg ">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://cdn2.viettelstore.vn/images/Advertises/1170-x-50_2509240901032024.jpg" 
+                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="https://cdn2.viettelstore.vn/images/Advertises/1170x50-(2)_16147411001032024.png" 
+                    class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover">
+                </div>
+            </div>
+            <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-[20px] sm:w-[30px] h-[20px] sm:h-[30px] rounded-full bg-white/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <i class="fa-solid fa-chevron-left text-[12px]"></i>
+                </span>
+            </button>
+            <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-[20px] sm:w-[30px] h-[20px] sm:h-[30px] rounded-full bg-white/30 group-hover:bg-white/50  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <i class="fa-solid fa-chevron-right text-[12px]"></i>
+                </span>
+            </button>
+        </div>
+      <div class="flex items-center justify-between flex-wrap bg-[#d70018] p-[10px] space-x-[10px] text-white font-[450]
+      px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] space-y-[10px] sm:space-y-0">
+        <img class="h-[30px] sm:h-[40px] w-auto" src="https://vietphone.vn/images/logo.png"/>
+        <form action="/search" class="flex items-center justify-center">
+            <input class="h-[20px] sm:h-[40px] w-[140px] sm:w-[280px] px-[10px] rounded-tl-full rounded-bl-full text-[10px] sm:text-[14px]"
+            placeholder="Bạn cần tìm gì ?"/>
+          <button class="border h-[20px] sm:h-[40px] px-[10px] sm:px-[15px] rounded-tr-full rounded-br-full">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="flex items-center justify-center space-x-[10px]">
+            <div class="text-center">
+                <i class="fa-solid fa-phone text-[12px] sm:text-[20px]"></i><br/>
+                <span class="font-[500] ">08 8666 8777</span>
+            </div>
+            <div class="text-center">
+                <i class="fa-solid fa-file-lines text-[12px] sm:text-[20px]"></i><br/>
+                <span class="font-[500] ">Đơn hàng</span>
+            </div>
+            <div class="text-center">
+                <i class="fa-solid fa-shop text-[12px] sm:text-[20px]"></i><br/>
+                <span class="font-[500] ">Cửa hàng</span>
+            </div>
+            <div class="text-center">
+                <i class="fa-solid fa-cart-shopping text-[12px] sm:text-[20px]"></i><br/>
+                <span class="font-[500] ">Giỏ hàng</span>
+            </div>
+            <div class="text-center">
+                <i class="fa-solid fa-circle-user text-[12px] sm:text-[20px]"></i><br/>
+                <span class="font-[500]">Đăng nhập</span>
+            </div>
+        </div>
+        <!-- <div class="flex items-center justify-center">
+          <input
+            class="h-[40px] w-[300px] px-[10px] rounded-tl-[10px] rounded-bl-[10px] text-[14px]"
+            placeholder="Bạn cần tìm gì ?"
+          />
+          <button
+            class="border h-[40px] px-[15px] rounded-tr-[10px] rounded-br-[10px]"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-[5px] bg-[#df3346] p-[5px] rounded-[10px]"
+        >
+          <div><i class="fa-solid fa-phone"></i></div>
+          <div class="text-[12px]">
+            <span>Gọi mua hàng</span><br />
+            <span>1800 2024</span>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-[5px] bg-[#df3346] p-[5px] rounded-[10px]"
+        >
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="text-[12px]">
+            <span>Cửa hàng</span><br />
+            <span>gần bạn</span>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-[5px] bg-[#df3346] p-[5px] rounded-[10px]"
+        >
+          <div>
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="text-[12px]">
+            <span>Tra cứu</span><br />
+            <span>đơn hàng</span>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-[5px] bg-[#df3346] p-[5px] rounded-[10px]"
+        >
+          <div>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <div class="text-[12px]">
+            <span>Giỏ</span><br />
+            <span>hàng</span>
+          </div>
+        </div>
+        <div
+          class="flex items-center justify-center space-x-[5px] bg-[#df3346] p-[5px] rounded-[10px]"
+        >
+          <div>
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+          <div class="text-[12px]">
+            <span>Đăng</span><br />
+            <span>nhập</span>
+          </div>
+        </div> -->
+      </div>
+    </header>
+    <!-- Js -->
+    <script src="./index.js"></script>
+    <!-- Flowbite -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
