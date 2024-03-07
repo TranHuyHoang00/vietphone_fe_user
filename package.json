@@ -3,6 +3,7 @@
     "build": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.6.0",
     "flowbite": "^2.3.0",
     "preline": "^2.0.3",
     "tw-elements": "^1.1.0"

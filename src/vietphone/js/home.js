@@ -1,3 +1,13 @@
+// SEARCH FOCUS HIDDEN MENU
+document.getElementById('input_search').addEventListener('focus', function () {
+    document.getElementById('menu_search').classList.remove('hidden');
+});
+
+document.getElementById('input_search').addEventListener('blur', function () {
+    document.getElementById('menu_search').classList.add('hidden');
+});
+
+
 function list_blog(value) {
     var list = document.getElementById('list_blog');
     var item = document.getElementById('item_blog');
