@@ -76,12 +76,29 @@
                     </div>
                 </div>
             </div>
-            <form action="#" class="sm:hidden w-full flex items-center justify-center text-[10px] pb-[5px]">
-                <input class="w-full h-[25px] rounded-tl-[5px] rounded-bl-[5px] px-[10px] outline-none" placeholder="Bạn muốn tìm gì ?"/>
-                <button type="submit" class=" bg-blue-500 px-[10px] h-[25px] py-[1px] rounded-tr-[5px] rounded-br-[5px]">
-                <i class="fa-solid fa-magnifying-glass text-white"></i>
-                </button>
-            </form>
+            <div class="sm:hidden relative">
+                <form action="#" class=" w-full flex items-center justify-center text-[10px] pb-[5px]">
+                    <input id="input_search1" class="w-full h-[25px] rounded-tl-[5px] rounded-bl-[5px] px-[10px] outline-none" placeholder="Bạn muốn tìm gì ?"/>
+                    <button type="submit" class=" bg-blue-500 px-[10px] h-[25px] py-[1px] rounded-tr-[5px] rounded-br-[5px]">
+                    <i class="fa-solid fa-magnifying-glass text-white"></i>
+                    </button>
+                </form>
+                <ul id="menu_search1" class="absolute top-full left-0 z-10 bg-white text-black 
+                    border rounded-[5px] mt-[5px] hidden p-[10px] w-[300px] text-[10px]">
+                        <div class="text-red-500  font-[500]">
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                            <span>Xu hướng tìm kiếm</span>
+                            <i class="fa-solid fa-fire-flame-curved"></i>
+                        </div>
+                        <li class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out">
+                            <a href="#">Iphone 12 pro max 54G</a>
+                        </li>
+                        <li class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out">
+                            <a href="#">Samsung 15 pro max 54G</a>
+                        </li>
+                    </ul>
+            </div>
+            
         </div>
         <div  div class="bg-[#ec001cd7] text-white py-[5px] shadow-md border-b z-50">
             <div class="flex items-center justify-center space-x-[5px] sm:space-x-[10px] md:space-x-[20px] px-[10px]">
@@ -317,7 +334,7 @@
             <div class="space-y-[10px]">
                 <div id="list_sell_phone" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[10px] 
                     text-[12px] sm:text-[14px]">
-                    <div id="item_sell_phone" class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] 
+                    <a href="product_detail.html" id="item_sell_phone" class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] 
                     transition duration-600 ease-in-out font-[600] space-y-[5px] cursor-pointer group">
                         <div class="relative text-[10px] sm:text-[12px] lg:text-[14px]">
                             <img class="w-full object-cover rounded-[5px]"
@@ -358,7 +375,7 @@
                             <i class="fa-solid fa-credit-card"></i>
                             Mua ngay
                         </button>
-                    </div>
+                    </a>
                     
                 </div>
               </div>
@@ -427,7 +444,7 @@
             <div class="space-y-[10px]">
                 <div id="list_sell_sound" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[10px] 
                     text-[12px] sm:text-[14px]">
-                    <div id="item_sell_sound" class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] 
+                    <a href="product_detail.html" id="item_sell_sound" class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] 
                     transition duration-600 ease-in-out font-[600] space-y-[5px] cursor-pointer group">
                         <div class="relative text-[10px] sm:text-[12px] lg:text-[14px]">
                             <img class="w-full object-cover rounded-[5px]"
@@ -468,7 +485,7 @@
                             <i class="fa-solid fa-credit-card"></i>
                             Mua ngay
                         </button>
-                    </div>
+                    </a>
                     
                 </div>
               </div>
@@ -537,7 +554,7 @@
             <div class="space-y-[10px]">
                 <div id="list_sell_accessory" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[10px] 
                     text-[12px] sm:text-[14px]">
-                    <div id="item_sell_accessory" class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] 
+                    <a href="product_detail.html" id="item_sell_accessory" class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] 
                     transition duration-600 ease-in-out font-[600] space-y-[5px] cursor-pointer group">
                         <div class="relative text-[10px] sm:text-[12px] lg:text-[14px]">
                             <img class="w-full object-cover rounded-[5px]"
@@ -578,7 +595,7 @@
                             <i class="fa-solid fa-credit-card"></i>
                             Mua ngay
                         </button>
-                    </div>
+                    </a>
                     
                 </div>
               </div>

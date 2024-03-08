@@ -6,7 +6,13 @@ document.getElementById('input_search').addEventListener('focus', function () {
 document.getElementById('input_search').addEventListener('blur', function () {
     document.getElementById('menu_search').classList.add('hidden');
 });
+document.getElementById('input_search1').addEventListener('focus', function () {
+    document.getElementById('menu_search1').classList.remove('hidden');
+});
 
+document.getElementById('input_search1').addEventListener('blur', function () {
+    document.getElementById('menu_search1').classList.add('hidden');
+});
 
 function list_blog(value) {
     var list = document.getElementById('list_blog');
