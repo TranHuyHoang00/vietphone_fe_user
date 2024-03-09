@@ -1,4 +1,3 @@
-// SEARCH FOCUS HIDDEN MENU
 document.getElementById('input_search').addEventListener('focus', function () {
     document.getElementById('menu_search').classList.remove('hidden');
 });
@@ -51,18 +50,7 @@ function onLoad() {
 
 window.onload = onLoad;
 
-const scrollToTopButton =
-    document.getElementById('scroll-to-top');
-
-// Show button when user scrolls down
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 100) {
-        scrollToTopButton.style.display = 'block';
-    } else {
-        scrollToTopButton.style.display = 'none';
-    }
-});
-
+// SCROLL
 function scrollToTop() {
     window.scrollTo({
         top: 0,
