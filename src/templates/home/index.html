@@ -190,7 +190,7 @@
     <!-- BODY -->
     <div class="px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[20px] bg-[#f7f7f7] space-y-[10px] md:space-y-[20px] font-semibold">
       <!-- BANNER -->
-      <div class="md:grid grid-cols-3 bg-white  rounded-[10px] shadow-md border gap-[10px] p-[5px] sm:p-[10px]">
+      <div class="md:grid grid-cols-3 bg-white  rounded-[10px] shadow-md border gap-[10px]  sm:gap-[20px] p-[10px] sm:p-[20px]">
         <div class="col-span-2 text-[10px] sm:text-[12px] lg:text-[14px]">
             <div class="relative w-full overflow-hidden slider_banner1 space-y-[10px]">
                 <div class="overflow-hidden" data-glide-el="track">
@@ -228,7 +228,7 @@
             </div>
         </div>
         <div class="h-auto md:h-full w-full md:block flex items-center justify-between space-x-[10px] md:space-x-0 pt-[10px] md:pt-0">
-            <div class="relative w-1/2 md:h-1/2 md:w-full overflow-hidden slider_banner2 md:pb-[5px]">
+            <div class="relative w-1/2 md:h-1/2 md:w-full overflow-hidden slider_banner2 md:pb-[10px]">
                 <div class="overflow-hidden md:h-full " data-glide-el="track">
                     <ul class="relative md:h-full overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
                         <li class="md:h-full"><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/5/638452308981129153_F-H1_800x300.png" 
@@ -240,7 +240,7 @@
                     </ul>
                 </div>
             </div> 
-            <div class="relative w-1/2 md:h-1/2 md:w-full overflow-hidden slider_banner3 md:pt-[5px]">
+            <div class="relative w-1/2 md:h-1/2 md:w-full overflow-hidden slider_banner3 md:pt-[10px]">
                 <div class="overflow-hidden md:h-full" data-glide-el="track">
                     <ul class="relative md:h-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
                         <li><img src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/6/638453158333588575_F-H1_800x300.png" 
@@ -644,12 +644,12 @@
       </div>
     </div>
     <!-- FOOTER -->
-    <footer class="bg-white shadow-md border">
-        <div class="py-[10px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px]">
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-medium text-[12px] lg:text-[14px] gap-x-[5px] gap-y-[10px] sm:gap-[20px ">
+    <footer class="bg-white shadow-md border space-y-[10px]">
+        <div class="py-[10px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] text-[10px] sm:text-[12px] md:text-[14px] ">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-medium gap-x-[5px] gap-y-[10px] sm:gap-[20px] ">
                 <div class="space-y-[5px]">
                     <span>Kết nối với <span class="text-red-600 font-[600]">VIETPHONE</span></span>
-                    <div class="flex items-center space-x-[5px]">
+                    <div class="flex items-center gap-[10px]">
                         <a href="" class="border w-[30px] h-[30px] flex items-center justify-center rounded-full
                             hover:text-pink-500 transition duration-500 ease-in-out ">
                             <i class="fa-brands fa-facebook-messenger"></i>
@@ -667,7 +667,7 @@
                             <i class="fa-brands fa-youtube"></i>
                         </a>
                     </div>
-                    <a href="" class=" text-red-600 hover:text-blue-500 hover:underline transition duration-500 ease-in-out">
+                    <a href="" class=" text-red-500 hover:text-blue-500 hover:underline transition duration-500 ease-in-out">
                         <i class="fa-regular fa-hand-point-right"></i>
                         <span>Tìm cửa hàng gần nhất</span>
                         <i class="fa-regular fa-hand-point-left"></i>
@@ -681,7 +681,7 @@
                 </div>
                 <div>
                     <span>Phương thức thanh toán</span>
-                    <div class="flex flex-wrap items-center justify-start space-x-[5px]">
+                    <div class="flex flex-wrap items-center justify-start gap-[5px]">
                         <div div class="border rounded-[5px] p-[2px]">
                             <img class="h-[30px] w-[50px]" src="https://cdn2.cellphones.com.vn/x35,webp/media/wysiwyg/apple-pay-og.png"/>
                         </div>
@@ -700,84 +700,93 @@
                     <img class="h-[40px]" src="https://vietphone.vn/images/vietphone-dathongbao.png"/>
                 </div>
             </div>
-            <div class="pt-[10px]">
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-[5px] gap-y-[10px] sm:gap-[20px] text-[12px] lg:text-[14px]">
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 16</label></div>
-                        <div class=" text-blue-600">
-                            <a href="">Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)</a>
+            <div class="sm:grid grid-cols-2 gap-[10px] lg:gap-[20px] space-y-[10px] sm:space-y-0">
+                <div class="h-[160px] sm:h-[230px] md:h-[330px] lg:h-[430px] w-full overflow-y-auto p-[10px] border shadow-md space-y-[10px]">
+                    <div class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px]
+                        transition ease-in-out duration-500">
+                        <img class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
+                            src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"/>
+                        <div>
+                            <span class="font-bold group-hover:text-red-600 transition ease-in-out duration-500">VIETPHONE 16</span>
+                            <div class="gap-x-[5px] line-clamp-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="" 
+                                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500">
+                                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 21</label></div>
-                        <div class=" text-blue-600">
-                            <a href="">Số 217, Đường Nguyễn An Ninh, P Dĩ An, TP Dĩ An, Bình Dương (Đối diện UBND Phường Dĩ An)</a>
-                        </div> 
-                    </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
+                    <div class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px]
+                        transition ease-in-out duration-500">
+                        <img class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
+                            src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"/>
+                        <div>
+                            <span class="font-bold group-hover:text-red-600 transition ease-in-out duration-500">VIETPHONE 16</span>
+                            <div class="gap-x-[5px] line-clamp-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="" 
+                                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500">
+                                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
+                    <div class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px]
+                        transition ease-in-out duration-500">
+                        <img class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
+                            src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"/>
+                        <div>
+                            <span class="font-bold group-hover:text-red-600 transition ease-in-out duration-500">VIETPHONE 16</span>
+                            <div class="gap-x-[5px] line-clamp-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="" 
+                                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500">
+                                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
+                    <div class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px]
+                        transition ease-in-out duration-500">
+                        <img class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
+                            src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"/>
+                        <div>
+                            <span class="font-bold group-hover:text-red-600 transition ease-in-out duration-500">VIETPHONE 16</span>
+                            <div class="gap-x-[5px] line-clamp-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="" 
+                                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500">
+                                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
-                        </div>
-                    </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
-                        </div>
-                    </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
-                        </div>
-                    </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
-                        </div>
-                    </div>
-                    <div class="space-y-[5px]">
-                        <div class="font-[600]"><label >VIETPHONE 22</label></div>
-                        <div class=" text-blue-600">
-                            <a href="" >1/219B, Đường 22 Tháng 12, KP Hòa Lân 2, Thuận Giao, Thuận An, BD</a>
-                        </div>
-                    </div>
+                </div>
+                <div class="p-[10px] border shadow-md">
+                    <iframe class="w-full h-[200px] md:h-[300px] lg:h-[400px]"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.3804106855905!2d106.75983771596195!3d10.910341479336862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9e3cf243c85%3A0xf43a6cdb2a9c1147!2sVIETPHONE%2016!5e0!3m2!1svi!2s!4v1709950865009!5m2!1svi!2s" 
+                            style="border:0;" allowfullscreen="" loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
         <div class="bg-[#f7f7f7] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[10px]">
             <div class="text-[12px] text-center">
-                <span class="font-[600]">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ CÔNG NGHỆ VIỄN THÔNG VIETPHONE.VN</span>
+                <span class="font-medium">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ CÔNG NGHỆ VIỄN THÔNG VIETPHONE.VN</span>
                 <span>Giấy phép ĐKKD số 3702940296 do sở Kế hoạch và Đầu tư Tỉnh Bình Dương Cấp ngày 17/12/2020 </span><br/>
                 <span>Địa chỉ: Số 217, Đường Nguyễn An Ninh, Khu Phố Bình Minh 2, Phường Dĩ An, Thành phố Dĩ An, Tỉnh Bình Dương, Việt Nam</span>
                 <div class="flex items-center justify-center space-x-[10px]">
-                    <div class="">
-                        <span>Email:</span>
-                        <a class="underline text-blue-600 font-[600]" href="">lelinhusa1704@gmail.com</a>
+                    <div class="space-x-[5px]">
+                        <span>Email :</span>
+                        <a class="hover:underline hover:text-blue-700 text-blue-600 font-[600]
+                        transition ease-in-out duration-500" href="">lelinhusa1704@gmail.com</a>
                     </div>
-                    <div class="">
-                        <span>Điện thoại:</span>
-                        <a class="underline text-blue-600 font-[600]" href="">094777 4777</a>
+                    <div class="space-x-[5px]">
+                        <span>Điện thoại :</span>
+                        <a class="hover:underline hover:text-blue-700 text-blue-600 font-[600]
+                        transition ease-in-out duration-500" href="">094777 4777</a>
                     </div>
                 </div>
             </div>
