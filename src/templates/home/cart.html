@@ -15,490 +15,105 @@
     <link rel="stylesheet" href="../../static/css/index.css" />
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="w-full text-[8px] sm:text-[10px] md:text-[12px]">
-      <div
-        data-hs-carousel='{"loadingClasses": "opacity-0","isAutoPlay": true}'
-        class="relative"
-      >
-        <div
-          class="hs-carousel relative overflow-hidden w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px]"
-        >
-          <div
-            class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0"
-          >
-            <div class="hs-carousel-slide">
-              <div class="flex justify-center">
-                <img
-                  class="w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] object-cover"
-                  src="https://cdn2.viettelstore.vn/images/Advertises/1170x50-(2)_16147411001032024.png"
-                />
-              </div>
-            </div>
-            <div class="hs-carousel-slide">
-              <div class="flex justify-center">
-                <img
-                  class="w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] object-cover"
-                  src="https://cdn2.viettelstore.vn/images/Advertises/TOP-PC_16411500905092023.jpg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-[#d70018] py-[5px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px]"
-      >
-        <div
-          class="flex items-center justify-between text-white space-x-[10px]"
-        >
-          <a href="index.html">
-            <img
-              class="h-[30px] sm:h-[35px] md:h-[40px] w-auto hover:scale-105 transition duration-600 ease-in-out"
-              src="https://vietphone.vn/images/logo.png"
-            />
-          </a>
-          <div class="relative">
-            <form
-              action="#"
-              class="sm:flex items-center justify-center hidden text-black sm:w-[260px] md:w-[230px] lg:w-[400px] h-[30px]"
-            >
-              <input
-                id="input_search"
-                class="w-full h-[25px] md:h-[30px] rounded-tl-[5px] rounded-bl-[5px] px-[10px] outline-none placeholder:text-[12px]"
-                placeholder="Bạn muốn tìm gì ?"
-              />
-              <button
-                type="submit"
-                class="bg-blue-500 px-[10px] h-[25px] md:h-[30px] py-[1px] rounded-tr-[5px] rounded-br-[5px]"
-              >
-                <i class="fa-solid fa-magnifying-glass text-white"></i>
-              </button>
-            </form>
-            <ul
-              id="menu_search"
-              class="absolute top-full left-0 z-10 bg-white text-black border rounded-[5px] mt-[5px] hidden p-[10px] sm:w-[300px] lg:w-[500px]"
-            >
-              <div class="text-red-500 font-[500]">
-                <i class="fa-solid fa-fire-flame-curved"></i>
-                <span>Xu hướng tìm kiếm</span>
-                <i class="fa-solid fa-fire-flame-curved"></i>
-              </div>
-              <li
-                class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-              >
-                <a href="#">Iphone 12 pro max 54G</a>
-              </li>
-              <li
-                class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-              >
-                <a href="#">Samsung 15 pro max 54G</a>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="flex items-center justify-center space-x-[5px] lg:space-x-[10px]"
-          >
-            <div
-              class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-red-500 hover:scale-105 transition duration-600 ease-in-out"
-            >
-              <i class="fa-solid fa-phone text-[16px] sm:text-[20px]"></i><br />
-              <span class="hidden md:block">0886668777</span>
-            </div>
-            <a
-              href="cart.html"
-              class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-red-500 hover:scale-105 transition duration-600 ease-in-out"
-            >
-              <i
-                class="fa-solid fa-cart-shopping text-[16px] sm:text-[20px]"
-              ></i
-              ><br />
-              <span class="hidden md:block">Giỏ hàng</span>
-            </a>
-            <div
-              class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-red-500 hover:scale-105 transition duration-600 ease-in-out"
-              data-hs-overlay="#modal_login"
-            >
-              <i class="fa-solid fa-circle-user text-[16px] sm:text-[20px]"></i
-              ><br />
-              <span class="hidden md:block">Đăng nhập</span>
-            </div>
-          </div>
-        </div>
-        <div class="sm:hidden relative">
-          <form
-            action="#"
-            class="w-full flex items-center justify-center text-[10px] pb-[5px]"
-          >
-            <input
-              id="input_search1"
-              class="w-full h-[25px] rounded-tl-[5px] rounded-bl-[5px] px-[10px] outline-none"
-              placeholder="Bạn muốn tìm gì ?"
-            />
-            <button
-              type="submit"
-              class="bg-blue-500 px-[10px] h-[25px] py-[1px] rounded-tr-[5px] rounded-br-[5px]"
-            >
-              <i class="fa-solid fa-magnifying-glass text-white"></i>
-            </button>
-          </form>
-          <ul
-            id="menu_search1"
-            class="absolute top-full left-0 z-10 bg-white text-black border rounded-[5px] mt-[5px] hidden p-[10px] w-[300px] text-[10px]"
-          >
-            <div class="text-red-500 font-medium">
-              <i class="fa-solid fa-fire-flame-curved"></i>
-              <span>Xu hướng tìm kiếm</span>
-              <i class="fa-solid fa-fire-flame-curved"></i>
-            </div>
-            <li
-              class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-            >
-              <a href="#">Iphone 12 pro max 54G</a>
-            </li>
-            <li
-              class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-            >
-              <a href="#">Samsung 15 pro max 54G</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        div
-        class="bg-[#ec001cd7] text-white py-[5px] shadow-md border-b z-50"
-      >
-        <div
-          class="flex items-center justify-center space-x-[5px] sm:space-x-[10px] md:space-x-[20px] px-[10px]"
-        >
-          <div class="dropdown inline-block relative">
-            <button class="text-center cursor-pointer space-y-[5px]">
-              <div class="text-[16px] sm:text-[20px]">
-                <i class="fa-solid fa-mobile-screen"></i>
-              </div>
-              <span>Điện thoại</span>
-            </button>
-            <div class="dropdown_menu absolute hidden pt-[10px] z-10">
-              <div
-                class="text-black bg-white p-[5px] rounded-[5px] space-y-[5px] shadow-md"
-              >
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>IPHONE</span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>SAMSUNG</span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>OPPO</span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>REDMI</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown inline-block relative">
-            <button class="text-center cursor-pointer space-y-[5px]">
-              <div class="text-[16px] sm:text-[20px]">
-                <i class="fa-solid fa-music"></i>
-              </div>
-              <span>Âm thanh</span>
-            </button>
-            <div class="dropdown_menu absolute hidden pt-[10px] z-10">
-              <div
-                class="text-black bg-white p-[5px] rounded-[5px] space-y-[5px] shadow-md"
-              >
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>LOA KẸO KÉO<Opt></Opt></span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>LOA BLUETOOT</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown inline-block relative">
-            <button class="text-center cursor-pointer space-y-[5px]">
-              <div class="text-[16px] sm:text-[20px]">
-                <i class="fa-regular fa-keyboard"></i>
-              </div>
-              <span>Phụ kiện</span>
-            </button>
-            <div class="dropdown_menu absolute hidden pt-[10px] z-10">
-              <div
-                class="text-black bg-white p-[5px] rounded-[5px] space-y-[5px] shadow-md"
-              >
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>DÂY SẠC<Opt></Opt></span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>TAI PHONE</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-pen-to-square"></i>
-            </div>
-            <span>Hàng cũ</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-sim-card"></i>
-            </div>
-            <span>Sim thẻ</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-gears"></i>
-            </div>
-            <span>Sửa chữa</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-gift"></i>
-            </div>
-            <span>Khuyến mãi</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-regular fa-newspaper"></i>
-            </div>
-            <span>Tin tức</span>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div
-      class="px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[20px] bg-[#f7f7f7] space-y-[10px] md:space-y-[20px]"
-    >
+  
+    <div class="px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[20px] bg-[#f7f7f7] space-y-[10px] md:space-y-[20px]
+        text-[12px] sm:text-[14px] md:text-[16px]">
       <!-- NOT CART -->
-      <div
-        class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]"
-      >
+      <div class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]">
         <span class="font-bold">GIỎ HÀNG CỦA BẠN</span>
         <div class="text-center space-y-[10px]">
-          <div
-            class="flex items-center justify-center hover:scale-105 ease-in-out transition duration-500"
-          >
-            <img
-              class="h-[200px] w-auto object-cover"
-              src="../../static/images/empty-cart.png"
-            />
+          <div class="flex items-center justify-center">
+            <img class="h-[200px] w-auto object-cover" src="../../static/images/empty-cart.png"/>
           </div>
           <div class="space-y-[5px]">
-            <span class="text-red-600 font-bold"
-              >Chưa có sản phẩm nào trong giỏ hàng</span
-            ><br />
-            <span class="font-light"
-              >Cùng mua sắm sản phẩm tại
-              <span class="text-red-600 font-bold">VIETPHONE.VN</span>
-              nhé!</span
-            >
+            <span class="text-red-600 font-bold">Chưa có sản phẩm nào trong giỏ hàng</span><br/>
+            <span class="font-light">Cùng mua sắm sản phẩm tại<span class="text-red-600 font-bold">VIETPHONE.VN</span>nhé!</span>
           </div>
           <div>
             <a href="index.html">
-              <button
-                class="bg-red-600 text-white px-[20px] py-[10px] rounded-full hover:scale-105 hover:bg-red-700 ease-in-out transition duration-700"
-              >
+              <button class="bg-red-600 text-white px-[20px] py-[10px] rounded-full">
                 MUA HÀNG NGAY
               </button>
             </a>
           </div>
         </div>
       </div>
-      <!-- MY CART -->
-      <div
-        class="lg:grid grid-cols-3 space-y-[10px] lg:space-y-0 gap-[10px] text-[12px] sm:text-[14px] md:text-[16px]"
-      >
-        <div
-          class="col-span-2 bg-white p-[10px] sm:p-[20px] space-y-[10px] rounded-[10px] shadow-md"
-        >
-          <span class="font-bold">GIỎ HÀNG CỦA BẠN</span>
-          <div
-            class="flex justify-between border-b space-x-[5px] p-[5px] sm:p-[10px]"
-          >
-            <div class="flex space-x-[5px]">
-              <img
-                class="h-[100px] w-[100px] object-cover"
-                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/t/gtt_7766_3__1_5.jpg"
-              />
-              <div class="space-y-[5px]">
-                <div class="line-clamp-1">
-                  <a
-                    href="product_detail.html"
-                    class="font-medium hover:underline hover:text-blue-600"
-                    >Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A</a
-                  >
-                </div>
-                <div
-                  class="flex items-center flex-wrap justify-start gap-y-[5px] gap-x-[10px] font-medium"
-                >
-                  <span class="text-red-600"> 22.990.000đ </span>
-                  <small class="text-[#707070] line-through">
-                    25.990.000đ
-                  </small>
-                  <small class="px-[5px] rounded-[5px] border border-blue-600"
-                    >250GB</small
-                  >
-                  <small class="px-[5px] rounded-[5px] border border-blue-600"
-                    >Màu trắng</small
-                  >
-                </div>
-                <div
-                  class="p-[2px] sm:p-[4px] lg:p-[5px] inline-block border shadow-sm rounded-[5px]"
-                  data-hs-input-number
-                >
-                  <div class="flex items-center">
-                    <button
-                      type="button"
-                      class="border px-[4px] sm:px-[5px] rounded-[5px] disabled:opacity-50 disabled:pointer-events-none"
-                      data-hs-input-number-decrement
-                    >
-                      <i class="fa-solid fa-minus"></i>
-                    </button>
-                    <input
-                      class="p-0 w-[30px] bg-transparent border-0 text-center"
-                      type="text"
-                      value="0"
-                      data-hs-input-number-input
-                    />
-                    <button
-                      type="button"
-                      class="border px-[4px] sm:px-[5px] rounded-[5px] disabled:opacity-50 disabled:pointer-events-none"
-                      data-hs-input-number-increment
-                    >
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
+      <!-- END NOT CART -->
+
+      <!-- CART -->
+      <div class="lg:grid grid-cols-3 space-y-[10px] lg:space-y-0 gap-[10px] ">
+        <!-- PRODUCT CART -->
+        <div class="col-span-2">
+          <div class=" bg-white p-[10px] sm:p-[20px] space-y-[10px] rounded-[10px] shadow-md">
+            <span class="font-bold">GIỎ HÀNG CỦA BẠN</span>
+            <div class="flex justify-between border-b space-x-[5px] p-[5px] sm:p-[10px]">
+              <div class="flex space-x-[5px]">
+                <img alt="" title=""
+                  class="h-[100px] w-[100px] object-cover"
+                  src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/t/gtt_7766_3__1_5.jpg"/>
+                <div class="space-y-[5px]">
+                  <div class="line-clamp-1">
+                    <a href="product_detail.html"
+                      class="font-medium hover:underline hover:text-blue-600">
+                      Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A
+                    </a>
+                  </div>
+                  <div class="flex items-center flex-wrap justify-start gap-y-[5px] gap-x-[10px] font-medium">
+                    <span class="text-red-600"> 22.990.000đ </span>
+                    <small class="px-[5px] rounded-[5px] border border-blue-600">250GB</small>
+                    <small class="px-[5px] rounded-[5px] border border-blue-600">Màu trắng</small>
+                  </div>
+                  <div class="p-[2px] sm:p-[4px] lg:p-[5px] inline-block border shadow-sm rounded-[5px]" data-hs-input-number>
+                    <div class="flex items-center">
+                      <button
+                        type="button"
+                        class="border px-[4px] sm:px-[5px] rounded-[5px] disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-input-number-decrement>
+                        <i class="fa-solid fa-minus"></i>
+                      </button>
+                      <input
+                        class="p-0 w-[30px] bg-transparent border-0 text-center"
+                        type="text"
+                        value="0"
+                        data-hs-input-number-input/>
+                      <button
+                        type="button"
+                        class="border px-[4px] sm:px-[5px] rounded-[5px] disabled:opacity-50 disabled:pointer-events-none"
+                        data-hs-input-number-increment>
+                        <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="space-y-[5px]">
-              <button
-                class="border border-red-500 text-center h-[20px] w-[20px] sm:h-[30px] sm:w-[30px] rounded-[5px] hover:text-red-600 text-red-500 transition ease-in-out duration-500"
-              >
-                <i class="fa-solid fa-trash text-[12px] sm:text-[14px]"></i>
-              </button>
-              <div>
-                <input
-                  class="h-[20px] w-[20px] sm:h-[30px] sm:w-[30px] rounded-[5px]"
-                  checked="true"
-                  type="checkbox"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="flex justify-between border-b space-x-[5px] p-[5px] sm:p-[10px]"
-          >
-            <div class="flex space-x-[5px]">
-              <img
-                class="h-[100px] w-[100px] object-cover"
-                src="https://cdn2.cellphones.com.vn/insecure/rs:fill:358:358/q:90/plain/https://cellphones.com.vn/media/catalog/product/g/t/gtt_7766_3__1_5.jpg"
-              />
               <div class="space-y-[5px]">
-                <div class="line-clamp-1">
-                  <a
-                    href="product_detail.html"
-                    class="font-medium hover:underline hover:text-blue-600"
-                    >Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A</a
-                  >
+                <button class="border border-red-500 text-center h-[20px] w-[20px] sm:h-[30px] sm:w-[30px] rounded-[5px] text-red-500 ">
+                  <i class="fa-solid fa-trash text-[12px] sm:text-[14px]"></i>
+                </button>
+                <div>
+                  <input
+                    class="h-[20px] w-[20px] sm:h-[30px] sm:w-[30px] rounded-[5px]"
+                    checked="true"
+                    type="checkbox"/>
                 </div>
-                <div
-                  class="flex items-center flex-wrap justify-start gap-y-[5px] gap-x-[10px] font-medium"
-                >
-                  <span class="text-red-600"> 22.990.000đ </span>
-                  <small class="text-[#707070] line-through">
-                    25.990.000đ
-                  </small>
-                  <small class="px-[5px] rounded-[5px] border border-blue-600"
-                    >250GB</small
-                  >
-                  <small class="px-[5px] rounded-[5px] border border-blue-600"
-                    >Màu trắng</small
-                  >
-                </div>
-                <div
-                  class="p-[2px] sm:p-[4px] lg:p-[5px] inline-block border shadow-sm rounded-[5px]"
-                  data-hs-input-number
-                >
-                  <div class="flex items-center">
-                    <button
-                      type="button"
-                      class="border px-[4px] sm:px-[5px] rounded-[5px] disabled:opacity-50 disabled:pointer-events-none"
-                      data-hs-input-number-decrement
-                    >
-                      <i class="fa-solid fa-minus"></i>
-                    </button>
-                    <input
-                      class="p-0 w-[30px] bg-transparent border-0 text-center"
-                      type="text"
-                      value="0"
-                      data-hs-input-number-input
-                    />
-                    <button
-                      type="button"
-                      class="border px-[4px] sm:px-[5px] rounded-[5px] disabled:opacity-50 disabled:pointer-events-none"
-                      data-hs-input-number-increment
-                    >
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="space-y-[5px]">
-              <button
-                class="border border-red-500 text-center h-[20px] w-[20px] sm:h-[30px] sm:w-[30px] rounded-[5px] hover:text-red-600 text-red-500 transition ease-in-out duration-500"
-              >
-                <i class="fa-solid fa-trash text-[12px] sm:text-[14px]"></i>
-              </button>
-              <div>
-                <input
-                  class="h-[20px] w-[20px] sm:h-[30px] sm:w-[30px] rounded-[5px]"
-                  checked="true"
-                  type="checkbox"
-                />
               </div>
             </div>
           </div>
         </div>
+        <!--END PRODUCT CART-->
+
+        <!-- CHECKOUT -->
         <div>
-          <div
-            class="bg-white p-[10px] sm:p-[20px] space-y-[10px] rounded-[10px] shadow-md"
-          >
+          <div class="bg-white p-[10px] sm:p-[20px] space-y-[10px] rounded-[10px] shadow-md">
             <span class="font-bold">HÓA ĐƠN</span>
             <div class="w-full flex items-center border-b pb-[5px] gap-x-[5px]">
               <div class="w-7/12"><span>Tên sản phẩm</span></div>
               <div class="w-3/12"><span>Giá</span></div>
               <div class="w-2/12"><span>Sl</span></div>
             </div>
-            <div
-              class="w-full flex items-center border-b pb-[5px] gap-x-[10px] font-extralight"
-            >
+            <div class="w-full flex items-center border-b pb-[5px] gap-x-[10px] font-extralight">
               <div class="w-7/12 line-clamp-1">
-                <a
-                  href="product_detail.html"
-                  class="hover:text-blue-600 hover:underline transition ease-in-out duration-500"
-                >
+                <a href="product_detail.html" class="hover:text-blue-600 hover:underline transition ease-in-out duration-500">
                   Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A
                 </a>
               </div>
@@ -507,14 +122,9 @@
               </div>
               <div class="w-2/12"><span>2</span></div>
             </div>
-            <div
-              class="w-full flex items-center border-b pb-[5px] gap-x-[10px] font-extralight"
-            >
+            <div class="w-full flex items-center border-b pb-[5px] gap-x-[10px] font-extralight">
               <div class="w-7/12 line-clamp-1">
-                <a
-                  href="product_detail.html"
-                  class="hover:text-blue-600 hover:underline transition ease-in-out duration-500"
-                >
+                <a href="product_detail.html" class="hover:text-blue-600 hover:underline transition ease-in-out duration-500">
                   Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A
                 </a>
               </div>
@@ -529,336 +139,209 @@
                 <span class="text-red-600 font-medium">30.990.000đ</span>
               </span>
             </div>
-            <button
-              class="w-full bg-blue-500 rounded-[5px] py-[5px] px-[10px] text-white font-medium hover:bg-blue-600 transition duration-500 ease-in-out"
-            >
+            <button class="w-full bg-blue-500 rounded-[5px] py-[5px] px-[10px] text-white font-medium hover:bg-blue-600 transition duration-500 ease-in-out">
               THANH TOÁN NGAY
             </button>
           </div>
         </div>
+        <!-- END CHẸCKOUT -->
       </div>
-    </div>
-    <!-- FOOTER -->
-    <footer class="bg-white shadow-md border space-y-[10px]">
-      <div
-        class="py-[10px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] text-[10px] sm:text-[12px] md:text-[14px]"
-      >
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-medium gap-x-[5px] gap-y-[10px] sm:gap-[20px]"
-        >
-          <div class="space-y-[5px]">
-            <span
-              >Kết nối với
-              <span class="text-red-600 font-[600]">VIETPHONE</span></span
-            >
-            <div class="flex items-center gap-[10px]">
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-pink-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-facebook-messenger"></i>
-              </a>
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-blue-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-gray-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-red-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-youtube"></i>
-              </a>
+
+      <div class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]">
+        <div class="flex items-center justify-between gap-[10px]">
+          <span class="font-medium">HÌNH THỨC GIAO HÀNG</span>
+          <div class="flex items-center space-x-[5px]">
+            <div class="flex items-center space-x-[5px]">
+              <input checked type="radio" id="ghtn" name="delivery_type" value="ghtn">
+              <span for="ghtn">Giao hàng tận nơi</span>
             </div>
-            <a
-              href=""
-              class="text-red-500 hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-            >
-              <i class="fa-regular fa-hand-point-right"></i>
-              <span>Tìm cửa hàng gần nhất</span>
-              <i class="fa-regular fa-hand-point-left"></i>
-            </a>
-          </div>
-          <div>
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-              >Chính sách Bảo Mật</a
-            ><br />
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-              >Chính sách Đổi trả - Kiểm hàng</a
-            ><br />
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-            >
-              Chính sách Trả góp</a
-            ><br />
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-              >Chính sách Vận chuyển</a
-            ><br />
-          </div>
-          <div>
-            <span>Phương thức thanh toán</span>
-            <div class="flex flex-wrap items-center justify-start gap-[5px]">
-              <div div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x35,webp/media/wysiwyg/apple-pay-og.png"
-                />
-              </div>
-              <div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png"
-                />
-              </div>
-              <div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png"
-                />
-              </div>
-              <div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/zalopay-logo.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <img
-              class="h-[40px]"
-              src="https://vietphone.vn/images/vietphone-dathongbao.png"
-            />
-          </div>
-        </div>
-        <div
-          class="sm:grid grid-cols-2 gap-[10px] lg:gap-[20px] space-y-[10px] sm:space-y-0"
-        >
-          <div
-            class="h-[160px] sm:h-[230px] md:h-[330px] lg:h-[430px] w-full overflow-y-auto p-[10px] border shadow-md space-y-[10px]"
-          >
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-[10px] border shadow-md">
-            <iframe
-              class="w-full h-[200px] md:h-[300px] lg:h-[400px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.3804106855905!2d106.75983771596195!3d10.910341479336862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9e3cf243c85%3A0xf43a6cdb2a9c1147!2sVIETPHONE%2016!5e0!3m2!1svi!2s!4v1709950865009!5m2!1svi!2s"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-[#f7f7f7] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[10px]"
-      >
-        <div class="text-[12px] text-center">
-          <span class="font-medium"
-            >CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ CÔNG NGHỆ VIỄN THÔNG
-            VIETPHONE.VN</span
-          >
-          <span
-            >Giấy phép ĐKKD số 3702940296 do sở Kế hoạch và Đầu tư Tỉnh Bình
-            Dương Cấp ngày 17/12/2020 </span
-          ><br />
-          <span
-            >Địa chỉ: Số 217, Đường Nguyễn An Ninh, Khu Phố Bình Minh 2, Phường
-            Dĩ An, Thành phố Dĩ An, Tỉnh Bình Dương, Việt Nam</span
-          >
-          <div class="flex items-center justify-center space-x-[10px]">
-            <div class="space-x-[5px]">
-              <span>Email :</span>
-              <a
-                class="hover:underline hover:text-blue-700 text-blue-600 font-[600] transition ease-in-out duration-500"
-                href=""
-                >lelinhusa1704@gmail.com</a
-              >
-            </div>
-            <div class="space-x-[5px]">
-              <span>Điện thoại :</span>
-              <a
-                class="hover:underline hover:text-blue-700 text-blue-600 font-[600] transition ease-in-out duration-500"
-                href=""
-                >094777 4777</a
-              >
+              <div class="flex items-center space-x-[5px]">
+              <input type="radio" id="ntch" name="delivery_type" value="ntch">
+              <span for="ntch">Nhận tại cửa hàng</span>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- MODAL LOGIN dùng cho header-->
-    <div class="flex items-center justify-center">
-      <div
-        id="modal_login"
-        class="hs-overlay hidden size-full fixed top-0 z-[20] overflow-x-hidden overflow-y-auto pointer-events-none"
-      >
-        <div
-          class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all w-[300px] sm:w-[400px]"
-        >
-          <div
-            class="flex flex-col bg-white border shadow-sm rounded-[10px] pointer-events-auto p-[20px] space-y-[10px] text-[12px] sm:text-[14px]"
-          >
-            <div class="flex justify-between items-center p-[10px] border-b">
-              <h3 class="font-bold text-gray-800">
-                ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN
-              </h3>
-              <button
-                type="button"
-                class="hs-dropup-toggle flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                data-hs-overlay="#modal_login"
-              >
-                <i class="fa-solid fa-circle-xmark text-[20px]"></i>
-              </button>
+      <div class="grid lg:grid-cols-2 gap-[10px]">
+        <!-- ORDERER -->
+        <div class="space-y-[10px] bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px]">
+          <span class="font-medium">NGƯỜI ĐẶT</span>
+          <div class="flex items-start space-x-[10px]">
+            <div class="space-y-[3px] w-1/2">
+              <p class="font-medium">Họ và tên<span class="text-red-500">*</span></p>
+              <input placeholder="Nhập họ và tên"
+                class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full"/>
+              <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
             </div>
-            <div class="text-center space-y-[10px]">
-              <div class="flex items-center justify-center">
-                <img
-                  src="../../static/images/login.png"
-                  class="w-[150px] h-[150px] sm:h-[200px] sm:w-[200px]"
-                />
-              </div>
-              <div class="text-gray-600">
-                <span
-                  >Nhập số điện thoại mua hàng để hưởng đặc quyền riêng tại
-                  <span class="text-red-500 font-medium">VIETPHONE.VN</span>
-                </span>
-              </div>
-              <input
-                class="w-full h-[40px] border-gray-300 border-[2px] focus:outline-none focus:border-blue-500 rounded-[5px] px-[20px] ease-in-out transition duration-500 hover:border-blue-500"
-                placeholder="Nhập số điện thoại"
-              />
-              <button
-                class="bg-red-600 px-[20px] py-[10px] rounded-[5px] text-white hover:bg-red-700 ease-in-out transition duration-500"
-              >
-                TIẾP TỤC
-              </button>
+            <div class="space-y-[3px] w-1/2">
+              <p class="font-medium">Số điện thoại<span class="text-red-500">*</span></p>
+              <input placeholder="Nhập số điện thoại"
+                class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full"/>
+              <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
             </div>
           </div>
+          <div class="space-y-[3px]">
+            <p class="font-medium">Email</p>
+            <input placeholder="Nhập Email"
+              class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full"/>
+          </div>
+        </div>        
+        <!-- STORE -->
+        <div id="store" class=" hidden space-y-[10px] bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px]">
+          <span class="font-medium">NƠI NHẬN HÀNG</span>
+          <div class="space-y-[3px] w-full">
+            <p class="font-medium">Cửa hàng<span class="text-red-500">*</span></p>
+            <select
+              class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full text-[12px] sm:text-[14px] md:text-[16px]">
+              <option></option>
+              <option>VIET PHONE 16</option>
+              <option>VIET PHONE 20</option>
+            </select>
+            <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
+          </div>
+        </div>
+      </div>
+      <!-- ADDRESS -->
+      <div id="address" class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]">
+        <span class="font-medium">ĐỊA CHỈ NHẬN HÀNG</span>
+        <div class=" md:grid grid-cols-3 gap-[10px] space-y-[10px] md:space-y-0">
+          <div class="col-span-2">
+            <div class="grid grid-cols-2 gap-[10px] ">
+              <div class="space-y-[3px] w-full">
+                <p class="font-medium">Tỉnh / Thành phố<span class="text-red-500">*</span></p>
+                <select id="select_provinces" 
+                  class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full text-[12px] sm:text-[14px] md:text-[16px] overflow-y-auto max-h-[300px]">
+                  <option></option>
+                </select>
+                <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
+              </div>
+              <div class="space-y-[3px] w-full">
+                <p class="font-medium">Quận / Huyện<span class="text-red-500">*</span></p>
+                <select id="select_districts" 
+                  class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full text-[12px] sm:text-[14px] md:text-[16px]">
+                  <option></option>
+                </select>
+                <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-[3px] w-full">
+            <p class="font-medium">Phường / Xã<span class="text-red-500">*</span></p>
+            <select id="select_wards"
+              class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full text-[12px] sm:text-[14px] md:text-[16px]">
+              <option></option>
+            </select>
+            <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
+          </div>
+        </div>
+        <div class="flex items-start space-x-[10px]">
+          <div class="space-y-[3px] w-2/3">
+            <p class="font-medium">Địa chỉ / Đường<span class="text-red-500">*</span></p>
+            <input placeholder="Nhập địa chỉ / đường"
+              class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full"/>
+            <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
+          </div>
+          <div class="space-y-[3px] w-1/3">
+            <p class="font-medium">Thời gian giao<span class="text-red-500">*</span></p>
+            <select
+              class="border border-gray-600 rounded-[5px] h-[35px] md:h-[40px] px-[10px] w-full text-[12px] sm:text-[14px] md:text-[16px]">
+              <option></option>
+              <option>Giờ hành chính</option>
+              <option>Cuối tuần</option>
+            </select>
+            <small class="text-red-500 font-medium">* Thông tin bắt buộc</small>
+          </div>
+        </div>
+        <div class="space-y-[3px] w-full">
+          <p class="font-medium">Ghi chú</p>
+          <textarea rows="3" placeholder="Nhập ghi chú" class="w-full border border-gray-600 rounded-[5px]"></textarea>
         </div>
       </div>
     </div>
-    <!-- BUTTON SCROLL TOP  dùng chung-->
-    <button
-      onclick="scrollToTop()"
-      class="scroll-to-top fixed bottom-4 right-4 h-[30px] w-[30px] bg-gray-800 text-white rounded-full transition duration-300 hover:bg-gray-700 hover:text-gray-200"
-    >
-      <i class="fa-solid fa-caret-up"></i>
-    </button>
-    <!-- Js dùng chung-->
     <script src="../../static/js/index.js"></script>
-    <!-- Preline dùng chung-->
     <script src="../../../node_modules/preline/dist/preline.js"></script>
+    <script>
+      document.querySelectorAll('input[name="delivery_type"]').forEach((radio) => {
+        radio.addEventListener('change', function() {       
+          if (this.value === 'ghtn') {
+              document.getElementById('store').classList.add('hidden');
+              document.getElementById('address').classList.remove('hidden');
+          }
+          else if (this.value === 'ntch') {
+              document.getElementById('store').classList.remove('hidden');
+              document.getElementById('address').classList.add('hidden');
+          }
+        });
+      });
+
+      fetch_data_provinces();
+      function fetch_data_provinces(){
+        fetch('https://dev.vietphone.vn/address/api/v1/list-province?page=1&limit=100&search_query=')
+        .then(response => {return response.json();})
+        .then(data => {
+          if(data.data&&data.data.provinces){display_data_provinces(data.data.provinces);}
+        })
+        .catch(error => {console.error(error);});
+      };
+      function display_data_provinces(data) {
+        var select_provinces = document.getElementById('select_provinces');
+        data.forEach(item => {
+            var option = document.createElement('option');
+            option.value = item.code;
+            option.textContent = item.name;
+            select_provinces.appendChild(option);
+        });
+      }
+      document.getElementById('select_provinces').addEventListener('change', function() {
+        fetch_data_districts(this.value);
+      });
+
+      fetch_data_districts();
+      function fetch_data_districts(id){
+        fetch(`https://dev.vietphone.vn/address/api/v1/list-district?page=1&limit=100&search_query=${id}`)
+        .then(response => {return response.json();})
+        .then(data => {
+          if(data.data&&data.data.districts){display_data_districts(data.data.districts);}
+        })
+        .catch(error => {console.error(error);});
+      };
+      function display_data_districts(data) {
+        document.getElementById('select_districts').innerHTML = '<option></option>';
+        document.getElementById('select_wards').innerHTML = '<option></option>';
+        var select_provinces = document.getElementById('select_districts');
+        data.forEach(item => {
+            var option = document.createElement('option');
+            option.value = item.code;
+            option.textContent = item.name;
+            select_districts.appendChild(option);
+        });
+      }
+
+      document.getElementById('select_districts').addEventListener('change', function() {
+        fetch_data_wards(this.value);
+      });
+
+      fetch_data_wards();
+      function fetch_data_wards(id){
+        fetch(`https://dev.vietphone.vn/address/api/v1/list-ward?page=1&limit=100&search_query=${id}`)
+        .then(response => {return response.json();})
+        .then(data => {
+          if(data.data&&data.data.wards){display_data_wards(data.data.wards);}
+        })
+        .catch(error => {console.error(error);});
+      };
+      function display_data_wards(data) {
+        var select_provinces = document.getElementById('select_wards');
+        data.forEach(item => {
+            var option = document.createElement('option');
+            option.value = item.code;
+            option.textContent = item.name;
+            select_wards.appendChild(option);
+        });
+      }
+      document.getElementById('select_wards').addEventListener('change', function() {
+        
+      });
+    </script>
   </body>
 </html>

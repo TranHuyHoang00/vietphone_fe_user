@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var list_address=[
+          {
+            id:1,name:'VIETPHONE 16',address:'Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)TP. Dĩ An, Bình Dương ( Ngay Ngã Ba Ông Xã)',
+            image:'https://lh5.googleusercontent.com/p/AF1QipOEI3WFhpUwMjbWmmDVAvT0MKc3Sz6GaOetfATy=w408-h544-k-no',
+            google_map:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.3804106855905!2d106.75983771596195!3d10.910341479336862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9e3cf243c85%3A0xf43a6cdb2a9c1147!2sVIETPHONE%2016!5e0!3m2!1svi!2s!4v1709950865009!5m2!1svi!2s'
+          }
+        ]
+        var address_container=document.getElementById('address_container');
+        list_address.forEach(function(item){
+          var div = document.createElement('div');
+          div.innerHTML = `
+              <div class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500">
+                <div className='flex-shrink-0 '>
+                  <img class="h-[60px] md:h-[80px] lg:h-[100px] w-[60px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
+                    alt="${item.name}" title="${item.name}"
+                    src="${item.image}"/>
+                </div>
+                <div class="flex-1 ">
+                  <h2 class="font-bold group-hover:text-red-600 transition ease-in-out duration-500">${item.name}</h2>
+                  <div class="line-clamp-3">
+                    <p class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500">
+                      ${item.address}
+                    </p>
+                  </div>
+                </div>
+              </div>    
+          `;
+          div.addEventListener('click', function() {
+            get_data_to_iframe(item.google_map);
+          });
+          address_container.appendChild(div);  
+      });
+      var iframe_map=document.getElementById('iframe_map');
+      function get_data_to_iframe(google_map) { iframe_map.src=google_map}
+      </script>
+</body>
+</html>
