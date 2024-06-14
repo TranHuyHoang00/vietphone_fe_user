@@ -1,1556 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trang chủ</title>
-    <!-- Font Awesome -->
-    <link
-      href="../../static/fonts/fontawesome-free-6.5.1-web/css/all.css"
-      rel="stylesheet"
-    />
-    <!-- TailwindCss -->
-    <link href="../../styles/output.css" rel="stylesheet" />
-    <!-- Css -->
-    <link rel="stylesheet" href="../../static/css/index.css" />
-  </head>
-  <body>
-    <!-- HEADER -->
-    <header class="w-full text-[8px] sm:text-[10px] md:text-[12px]">
-      <div
-        data-hs-carousel='{"loadingClasses": "opacity-0","isAutoPlay": true}'
-        class="relative"
-      >
-        <div
-          class="hs-carousel relative overflow-hidden w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px]"
-        >
-          <div
-            class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0"
-          >
-            <div class="hs-carousel-slide">
-              <div class="flex justify-center">
-                <img
-                  class="w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] object-cover"
-                  src="https://cdn2.viettelstore.vn/images/Advertises/1170x50-(2)_16147411001032024.png"
-                />
-              </div>
-            </div>
-            <div class="hs-carousel-slide">
-              <div class="flex justify-center">
-                <img
-                  class="w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] object-cover"
-                  src="https://cdn2.viettelstore.vn/images/Advertises/TOP-PC_16411500905092023.jpg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-[#d70018] py-[5px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px]"
-      >
-        <div
-          class="flex items-center justify-between text-white space-x-[10px]"
-        >
-          <a href="index.html">
-            <img
-              class="h-[30px] sm:h-[35px] md:h-[40px] w-auto hover:scale-105 transition duration-600 ease-in-out"
-              src="https://vietphone.vn/images/logo.png"
-            />
-          </a>
-          <div class="relative">
-            <form
-              action="#"
-              class="sm:flex items-center justify-center hidden text-black sm:w-[260px] md:w-[230px] lg:w-[400px] h-[30px]"
-            >
-              <input
-                id="input_search"
-                class="w-full h-[25px] md:h-[30px] rounded-tl-[5px] rounded-bl-[5px] px-[10px] outline-none placeholder:text-[12px]"
-                placeholder="Bạn muốn tìm gì ?"
-              />
-              <button
-                type="submit"
-                class="bg-blue-500 px-[10px] h-[25px] md:h-[30px] py-[1px] rounded-tr-[5px] rounded-br-[5px]"
-              >
-                <i class="fa-solid fa-magnifying-glass text-white"></i>
-              </button>
-            </form>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+  <!-- Font Awesome -->
+  <link href="../../static/fonts/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet" />
+  <!-- TailwindCss -->
+  <link href="../../styles/output.css" rel="stylesheet" />
+  <!-- Css -->
+  <link rel="stylesheet" href="../../static/css/index.css" />
+  <!-- Page Done -->
+  <link href="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/css/pagedone.css" />
+  <!--  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <style>
+    .truncate-2-lines {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      box-orient: vertical;
+    }
+
+    .min-h-2-lines {
+      min-height: calc(1.5rem * 2);
+    }
+
+    .hiddenXScroll::-webkit-scrollbar {
+      height: 0;
+    }
+
+    .hiddenXScroll {
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- BODY -->
+  <div
+    class=" pt-[170px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[20px] bg-[#f7f7f7] space-y-[10px] md:space-y-[20px] font-semibold">
+    <!-- SEO H1 -->
+    <h1 class="invisible">Việt Phone - Điện Thoại, Loa, Phụ Kiện Chính Hãng</h1>
+   
+    <div class="md:grid grid-cols-3 bg-white rounded-[10px] shadow-md border gap-[10px] sm:gap-[20px] p-[10px] sm:p-[20px]
+        space-y-[10px] md:space-y-0">
+      <div class="col-span-2 text-[10px] sm:text-[12px] lg:text-[14px]">
+        <div class="relative w-full overflow-hidden slider_banner1 space-y-[10px] md:space-y-[20px]">
+          <div class="overflow-hidden" data-glide-el="track">
             <ul
-              id="menu_search"
-              class="absolute top-full left-0 z-10 bg-white text-black border rounded-[5px] mt-[5px] hidden p-[10px] sm:w-[300px] lg:w-[500px]"
-            >
-              <div class="text-red-500 font-[500]">
-                <i class="fa-solid fa-fire-flame-curved"></i>
-                <span>Xu hướng tìm kiếm</span>
-                <i class="fa-solid fa-fire-flame-curved"></i>
-              </div>
-              <li
-                class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-              >
-                <a href="#">Iphone 12 pro max 54G</a>
+              class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+              <li class="relative aspect-[7/3]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/6/638453158333588575_F-H1_800x300.png"
+                  class="w-full h-full object-cover rounded-[10px]" />
               </li>
-              <li
-                class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-              >
-                <a href="#">Samsung 15 pro max 54G</a>
+              <li class="relative aspect-[7/3]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638449086704799381_F-H1_800x300.png"
+                  class="w-full h-full object-cover rounded-[10px]" />
+              </li>
+              <li class="relative aspect-[7/3]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448424956202070_F-H1_800x300.png"
+                  class="w-full h-full object-cover rounded-[10px]" />
               </li>
             </ul>
           </div>
-          <div
-            class="flex items-center justify-center space-x-[5px] lg:space-x-[10px]"
-          >
-            <div
-              class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-red-500 hover:scale-105 transition duration-600 ease-in-out"
-            >
-              <i class="fa-solid fa-phone text-[16px] sm:text-[20px]"></i><br />
-              <span class="hidden md:block">0886668777</span>
-            </div>
-            <a
-              href="cart.html"
-              class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-red-500 hover:scale-105 transition duration-600 ease-in-out"
-            >
-              <i
-                class="fa-solid fa-cart-shopping text-[16px] sm:text-[20px]"
-              ></i
-              ><br />
-              <span class="hidden md:block">Giỏ hàng</span>
-            </a>
-            <div
-              class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-red-500 hover:scale-105 transition duration-600 ease-in-out"
-              data-hs-overlay="#modal_login"
-            >
-              <i class="fa-solid fa-circle-user text-[16px] sm:text-[20px]"></i
-              ><br />
-              <span class="hidden md:block">Đăng nhập</span>
-            </div>
+          <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
+            data-glide-el="controls">
+            <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
+              data-glide-dir="<" aria-label="prev slide">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
+              data-glide-dir=">" aria-label="next slide">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
-        </div>
-        <div class="sm:hidden relative">
-          <form
-            action="#"
-            class="w-full flex items-center justify-center text-[10px] pb-[5px]"
-          >
-            <input
-              id="input_search1"
-              class="w-full h-[25px] rounded-tl-[5px] rounded-bl-[5px] px-[10px] outline-none"
-              placeholder="Bạn muốn tìm gì ?"
-            />
+          <div class="flex items-center justify-center w-full space-x-[5px] font-[500] border rounded-[5px] shadow-md"
+            data-glide-el="controls[nav]">
             <button
-              type="submit"
-              class="bg-blue-500 px-[10px] h-[25px] py-[1px] rounded-tr-[5px] rounded-br-[5px]"
-            >
-              <i class="fa-solid fa-magnifying-glass text-white"></i>
+              class="w-1/3 sm:w-1/5 group p-[5px] hover:text-red-600 border-b-[2px] border-white hover:border-red-600 transition duration-600 ease-in-out truncate"
+              data-glide-dir="=0">
+              <span class="py-[10px]">Mua Reno11 F tặng loa cực xịn loa cực xịn 111111 loa cực xịn
+                111111 loa cực xịn 111111</span>
             </button>
-          </form>
-          <ul
-            id="menu_search1"
-            class="absolute top-full left-0 z-10 bg-white text-black border rounded-[5px] mt-[5px] hidden p-[10px] w-[300px] text-[10px]"
-          >
-            <div class="text-red-500 font-medium">
-              <i class="fa-solid fa-fire-flame-curved"></i>
-              <span>Xu hướng tìm kiếm</span>
-              <i class="fa-solid fa-fire-flame-curved"></i>
-            </div>
-            <li
-              class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-            >
-              <a href="#">Iphone 12 pro max 54G</a>
-            </li>
-            <li
-              class="border-b py-[10px] hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-            >
-              <a href="#">Samsung 15 pro max 54G</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div
-        div
-        class="bg-[#ec001cd7] text-white py-[5px] shadow-md border-b z-50"
-      >
-        <div
-          class="flex items-center justify-center space-x-[5px] sm:space-x-[10px] md:space-x-[20px] px-[10px]"
-        >
-          <div class="dropdown inline-block relative">
-            <button class="text-center cursor-pointer space-y-[5px]">
-              <div class="text-[16px] sm:text-[20px]">
-                <i class="fa-solid fa-mobile-screen"></i>
-              </div>
-              <span>Điện thoại</span>
+            <button
+              class="w-1/3 sm:w-1/5 group p-[5px] hover:text-red-600 border-b-[2px] border-white hover:border-red-600 transition duration-600 ease-in-out truncate"
+              data-glide-dir="=1">
+              <span class="py-[10px]">Laptop gaming siêu xịn đẹp</span>
             </button>
-            <div class="dropdown_menu absolute hidden pt-[10px] z-10">
-              <div
-                class="text-black bg-white p-[5px] rounded-[5px] space-y-[5px] shadow-md"
-              >
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>IPHONE</span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>SAMSUNG</span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>OPPO</span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>REDMI</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown inline-block relative">
-            <button class="text-center cursor-pointer space-y-[5px]">
-              <div class="text-[16px] sm:text-[20px]">
-                <i class="fa-solid fa-music"></i>
-              </div>
-              <span>Âm thanh</span>
+            <button
+              class="w-1/3 sm:w-1/5 group p-[5px] hover:text-red-600 border-b-[2px] border-white hover:border-red-600 transition duration-600 ease-in-out truncate"
+              data-glide-dir="=2">
+              <span class="py-[10px]">Sắm ngay gia dụng siêu hot</span>
             </button>
-            <div class="dropdown_menu absolute hidden pt-[10px] z-10">
-              <div
-                class="text-black bg-white p-[5px] rounded-[5px] space-y-[5px] shadow-md"
-              >
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>LOA KẸO KÉO<Opt></Opt></span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>LOA BLUETOOT</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="dropdown inline-block relative">
-            <button class="text-center cursor-pointer space-y-[5px]">
-              <div class="text-[16px] sm:text-[20px]">
-                <i class="fa-regular fa-keyboard"></i>
-              </div>
-              <span>Phụ kiện</span>
-            </button>
-            <div class="dropdown_menu absolute hidden pt-[10px] z-10">
-              <div
-                class="text-black bg-white p-[5px] rounded-[5px] space-y-[5px] shadow-md"
-              >
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>DÂY SẠC<Opt></Opt></span>
-                </div>
-                <div
-                  class="border-b w-[150px] sm:w-[200px] py-[5px] px-[10px] cursor-pointer hover:text-blue-600 hover:border-blue-600 transition duration-600 ease-in-out"
-                >
-                  <span>TAI PHONE</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-pen-to-square"></i>
-            </div>
-            <span>Hàng cũ</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-sim-card"></i>
-            </div>
-            <span>Sim thẻ</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-gears"></i>
-            </div>
-            <span>Sửa chữa</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-solid fa-gift"></i>
-            </div>
-            <span>Khuyến mãi</span>
-          </div>
-          <div class="text-center cursor-pointer space-y-[5px]">
-            <div class="text-[16px] sm:text-[20px]">
-              <i class="fa-regular fa-newspaper"></i>
-            </div>
-            <span>Tin tức</span>
           </div>
         </div>
       </div>
-    </header>
-    <!-- BODY -->
+      <div class=" md:block flex items-center justify-between md:space-y-[20px] space-x-[10px] md:space-x-0">
+        <div class="w-1/2 md:w-full relative overflow-hidden slider_banner2">
+          <div class="overflow-hidden " data-glide-el="track">
+            <ul
+              class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+              <li class="relative aspect-[2/1]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/5/638452308981129153_F-H1_800x300.png"
+                  class="h-full w-full object-cover rounded-[10px]" />
+              </li>
+              <li class="relative aspect-[2/1]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638449086704799381_F-H1_800x300.png"
+                  class="h-full w-full object-cover rounded-[10px]" />
+              </li>
+              <li class="relative aspect-[2/1]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448424956202070_F-H1_800x300.png"
+                  class="h-full w-full object-cover rounded-[10px]" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-full relative overflow-hidden slider_banner3">
+          <div class="overflow-hidden" data-glide-el="track">
+            <ul
+              class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+              <li class="relative aspect-[2/1]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/6/638453158333588575_F-H1_800x300.png"
+                  class="h-full w-full object-cover rounded-[10px]" />
+              </li>
+              <li class="relative aspect-[2/1]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/5/638452308981129153_F-H1_800x300.png"
+                  class="h-full w-full object-cover rounded-[10px]" />
+              </li>
+              <li class="relative aspect-[2/1]">
+                <img
+                  src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448424956202070_F-H1_800x300.png"
+                  class="h-full w-full object-cover rounded-[10px]" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BANNER DISCOUNT -->
     <div
-      class="px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[20px] bg-[#f7f7f7] space-y-[10px] md:space-y-[20px] font-semibold"
-    >
-      <!-- BANNER -->
-      <div
-        class="md:grid grid-cols-3 bg-white rounded-[10px] shadow-md border gap-[10px] sm:gap-[20px] p-[10px] sm:p-[20px]
-        space-y-[10px] md:space-y-0"
-      >
-        <div class="col-span-2 text-[10px] sm:text-[12px] lg:text-[14px]">
+      class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
+      <span class="font-medium">ƯU ĐÃI KHI THANH TOÁN ONLINE</span>
+      <div class="relative w-full glide_banner_discount">
+        <div class="overflow-hidden" data-glide-el="track">
           <div
-            class="relative w-full overflow-hidden slider_banner1 space-y-[10px] md:space-y-[20px]"
-          >
-            <div class="overflow-hidden" data-glide-el="track">
-              <ul
-                class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
-              >
-                <li class="relative aspect-[7/3]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/6/638453158333588575_F-H1_800x300.png"
-                    class="w-full h-full object-cover rounded-[10px]"
-                  />
-                </li>
-                <li class="relative aspect-[7/3]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638449086704799381_F-H1_800x300.png"
-                    class="w-full h-full object-cover rounded-[10px]"
-                  />
-                </li>
-                <li class="relative aspect-[7/3]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448424956202070_F-H1_800x300.png"
-                    class="w-full h-full object-cover rounded-[10px]"
-                  />
-                </li>
-              </ul>
+            class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+            <div class="relative aspect-[2/1] cursor-pointer hover:scale-105 transition duration-700 ease-in-out">
+              <img class="rounded-[10px] object-cover w-full h-full"
+                src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/12/29/638394549558175890_F_H3_384x180.png" />
             </div>
-            <div
-              class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
-              data-glide-el="controls"
-            >
-              <button
-                class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-                data-glide-dir="<"
-                aria-label="prev slide"
-              >
-                <i class="fa-solid fa-chevron-left"></i>
-              </button>
-              <button
-                class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-                data-glide-dir=">"
-                aria-label="next slide"
-              >
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
+            <div class="relative aspect-[2/1] cursor-pointer hover:scale-105 transition duration-700 ease-in-out">
+              <img class="rounded-[10px] object-cover w-full h-full"
+                src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638448841006266286_F_H3_384x180.png" />
             </div>
-            <div
-              class="flex items-center justify-center w-full space-x-[5px] font-[500] border rounded-[5px] shadow-md"
-              data-glide-el="controls[nav]"
-            >
-              <button
-                class="w-1/3 sm:w-1/5 group p-[5px] hover:text-red-600 border-b-[2px] border-white hover:border-red-600 transition duration-600 ease-in-out truncate"
-                data-glide-dir="=0"
-              >
-                <span class="py-[10px]"
-                  >Mua Reno11 F tặng loa cực xịn loa cực xịn 111111 loa cực xịn
-                  111111 loa cực xịn 111111</span
-                >
-              </button>
-              <button
-                class="w-1/3 sm:w-1/5 group p-[5px] hover:text-red-600 border-b-[2px] border-white hover:border-red-600 transition duration-600 ease-in-out truncate"
-                data-glide-dir="=1"
-              >
-                <span class="py-[10px]">Laptop gaming siêu xịn đẹp</span>
-              </button>
-              <button
-                class="w-1/3 sm:w-1/5 group p-[5px] hover:text-red-600 border-b-[2px] border-white hover:border-red-600 transition duration-600 ease-in-out truncate"
-                data-glide-dir="=2"
-              >
-                <span class="py-[10px]">Sắm ngay gia dụng siêu hot</span>
-              </button>
+            <div class="relative aspect-[2/1] cursor-pointer hover:scale-105 transition duration-700 ease-in-out">
+              <img class="rounded-[10px] object-cover w-full h-full"
+                src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638448844020965733_H3_384x180.png" />
             </div>
           </div>
         </div>
-        <div
-          class=" md:block flex items-center justify-between md:space-y-[20px] space-x-[10px] md:space-x-0"
-        >
-          <div
-            class="w-1/2 md:w-full relative overflow-hidden slider_banner2"
-          >
-            <div class="overflow-hidden " data-glide-el="track">
-              <ul
-                class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
-              >
-                <li class="relative aspect-[2/1]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/5/638452308981129153_F-H1_800x300.png"
-                    class="h-full w-full object-cover rounded-[10px]"
-                  />
-                </li>
-                <li class="relative aspect-[2/1]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638449086704799381_F-H1_800x300.png"
-                    class="h-full w-full object-cover rounded-[10px]"
-                  />
-                </li>
-                <li class="relative aspect-[2/1]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448424956202070_F-H1_800x300.png"
-                    class="h-full w-full object-cover rounded-[10px]"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div
-            class="w-1/2 md:w-full relative overflow-hidden slider_banner3"
-          >
-            <div class="overflow-hidden" data-glide-el="track">
-              <ul
-                class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
-              >
-                <li class="relative aspect-[2/1]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/6/638453158333588575_F-H1_800x300.png"
-                    class="h-full w-full object-cover rounded-[10px]"
-                  />
-                </li>
-                <li class="relative aspect-[2/1]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/5/638452308981129153_F-H1_800x300.png"
-                    class="h-full w-full object-cover rounded-[10px]"
-                  />
-                </li>
-                <li class="relative aspect-[2/1]">
-                  <img
-                    src="https://images.fpt.shop/unsafe/fit-in/800x300/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448424956202070_F-H1_800x300.png"
-                    class="h-full w-full object-cover rounded-[10px]"
-                  />
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- BANNER DISCOUNT -->
-      <div
-        class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]"
-      >
-        <span class="font-medium">ƯU ĐÃI KHI THANH TOÁN ONLINE</span>
-        <div class="relative w-full glide_banner_discount">
-          <div class="overflow-hidden" data-glide-el="track">
-            <div
-              class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
-            >
-              <div
-                class="relative aspect-[2/1] cursor-pointer hover:scale-105 transition duration-700 ease-in-out"
-              >
-                <img
-                  class="rounded-[10px] object-cover w-full h-full"
-                  src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2023/12/29/638394549558175890_F_H3_384x180.png"
-                />
-              </div>
-              <div
-                class="relative aspect-[2/1] cursor-pointer hover:scale-105 transition duration-700 ease-in-out"
-              >
-                <img
-                  class="rounded-[10px] object-cover w-full h-full"
-                  src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638448841006266286_F_H3_384x180.png"
-                />
-              </div>
-              <div
-                class="relative aspect-[2/1] cursor-pointer hover:scale-105 transition duration-700 ease-in-out"
-              >
-                <img
-                  class="rounded-[10px] object-cover w-full h-full"
-                  src="https://images.fpt.shop/unsafe/fit-in/384x180/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/3/1/638448844020965733_H3_384x180.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
-            data-glide-el="controls"
-          >
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir="<"
-              aria-label="prev slide"
-            >
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir=">"
-              aria-label="next slide"
-            >
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- LIST CATEGORY PHONE -->
-      <div
-        class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]"
-      >
-        <span class="font-medium">DANH MỤC ĐIỆN THOẠI</span>
-        <div class="relative w-full glide_category_phone">
-          <div class="overflow-hidden" data-glide-el="track">
-            <div
-              class="relative w-full overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
-            >
-              <a
-                href="product.html"
-                class="cursor-pointer text-center border hover:border-red-500 transition duration-500 ease-in-out"
-              >
-                <div class="aspect-[3/1] px-[10px] py-[5px]">
-                  <img
-                    class="object-cover h-full w-full"
-                    src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg"
-                  />
-                </div>
-              </a>
-              <a
-                href="product.html"
-                class="cursor-pointer text-center border hover:border-red-500 transition duration-500 ease-in-out"
-              >
-                <div class="aspect-[5/2] px-[10px] py-[5px]">
-                  <img
-                    class="object-cover h-full w-full"
-                    src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/14/637618612858518848_Lenovo@2x.jpg"
-                  />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div
-            class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
-            data-glide-el="controls"
-          >
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir="<"
-              aria-label="prev slide"
-            >
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir=">"
-              aria-label="next slide"
-            >
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- FLASH SALE -->
-      <div class="space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">  
-        <div class="bg-[#f9415c] shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]">
-          
-          <div class="text-white flex items-center justify-between gap-[5px]">
-            <div class="flex items-center gap-[5px] text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px]">
-              <div class="border rounded-full p-[5px] sm:p-[10px] flex items-center justify-center">
-                <i class="fa-solid fa-fire"></i>
-              </div>
-              <h3 class="font-bold animate-bounce">
-                HOT SALE 
-              </h3>
-            </div>
-            <div id="countdown_flash_sale" class="flex items-center justify-center z-10 space-x-[5px]">
-            </div>
-          </div>
-          <div class="space-y-[10px]">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]">
-              <a href="product_detail.html" class="bg-white shadow-md border hover:border-red-600 p-[10px] rounded-[5px] transition duration-500 ease-in-out group space-y-[10px]">
-                <div class="relative aspect-square">
-                  <img class="w-full h-full object-cover rounded-[5px]"
-                    src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448464173065252_banner%20(3).png"
-                  />
-                  <small class="absolute rounded-[5px] bottom-0 left-0 bg-indigo-600 px-[12px] py-[6px] text-white">
-                    HOT
-                  </small>
-                  <small class="absolute aspect-square top-0 right-0 bg-indigo-600 px-4 text-white rounded-full flex flex-col items-center justify-center mt-[5px] mr-[5px]">
-                    <span class="font-bold">SALE</span>
-                    <span>-27%</span>
-                  </small>
-                </div>
-                <div class="space-y-[5px]">
-                  <div class="text-start font-medium line-clamp-1 group-hover:text-blue-600 group-hover:underline">
-                    <span>Điện thoại iPhone 15 Pro chính hãng 150GB</span>
-                  </div>
-                  <div class="flex items-center justify-between flex-wrap">
-                    <span class="text-[#d70018]"> 22.990.000đ </span>
-                    <small class="text-[#707070] line-through">
-                      25.990.000đ
-                    </small>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <small class="">
-                      <i
-                        class="fa-solid fa-money-check-dollar text-orange-500"
-                      ></i>
-                      <span class="font-[600] underline">180 bán</span>
-                    </small>
-                    <small class="">
-                      <i class="fa-solid fa-heart text-red-500"></i>
-                      <span class="font-[600] underline">1.2k thích</span>
-                    </small>
-                  </div>
-                  <div class="flex items-center">
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                  </div>
-                </div>
-                <button class="w-full bg-red-500 group-hover:bg-red-600 py-[5px] transition duration-600 ease-in-out rounded-[5px] text-white">
-                  <i class="fa-solid fa-credit-card"></i>
-                  <small>Mua ngay</small>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- LIST PHONE -->
-      <div class="space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
-        <div class="w-full h-auto">
-          <img
-            class="rounded-[10px] w-full h-[80px] sm:h-[120px] md:h-[160px] lg:h-[180px] object-cover shadow-md border"
-            src="https://samcenter.vn/images/uploaded/Image%20product/Artboard%202.png"/>
-        </div>
-        <div class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]">
-          <div class="flex items-center justify-between space-x-[5px] font-medium cursor-pointer">
-            <div class="w-[150px] sm:w-[300px] bg-red-600 py-[3px] text-center rounded-[5px]">
-              <span class="text-white">ĐIỆN THOẠI BÁN CHẠY</span>
-            </div>
-            <button class="bg-red-600 text-white px-[10px] py-[3px] rounded-[5px]">
-              <small> Xem thêm</small>
-              <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-          <div class="space-y-[10px]">
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]">
-              <a href="product_detail.html" class="bg-white shadow-md border hover:border-red-600 p-[10px] rounded-[5px] transition duration-500 ease-in-out group space-y-[10px]">
-                <div class="relative aspect-square">
-                  <img class="w-full h-full object-cover rounded-[5px]"
-                    src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448464173065252_banner%20(3).png"
-                  />
-                  <small class="absolute rounded-[5px] bottom-0 left-0 bg-indigo-600 px-[12px] py-[6px] text-white">
-                    HOT
-                  </small>
-                  <small class="absolute aspect-square top-0 right-0 bg-indigo-600 px-4 text-white rounded-full flex flex-col items-center justify-center mt-[5px] mr-[5px]">
-                    <span class="font-bold">SALE</span>
-                    <span>-27%</span>
-                  </small>
-                </div>
-                <div class="space-y-[5px]">
-                  <div class="text-start font-medium line-clamp-1 group-hover:text-blue-600 group-hover:underline">
-                    <span>Điện thoại iPhone 15 Pro chính hãng 150GB</span>
-                  </div>
-                  <div class="flex items-center justify-between flex-wrap">
-                    <span class="text-[#d70018]"> 22.990.000đ </span>
-                    <small class="text-[#707070] line-through">
-                      25.990.000đ
-                    </small>
-                  </div>
-                  <div class="flex items-center justify-between">
-                    <small class="">
-                      <i
-                        class="fa-solid fa-money-check-dollar text-orange-500"
-                      ></i>
-                      <span class="font-[600] underline">180 bán</span>
-                    </small>
-                    <small class="">
-                      <i class="fa-solid fa-heart text-red-500"></i>
-                      <span class="font-[600] underline">1.2k thích</span>
-                    </small>
-                  </div>
-                  <div class="flex items-center">
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                    <span class="fa fa-star text-orange-500"></span>
-                  </div>
-                </div>
-                <button class="w-full bg-red-500 group-hover:bg-red-600 py-[5px] transition duration-600 ease-in-out rounded-[5px] text-white">
-                  <i class="fa-solid fa-credit-card"></i>
-                  <small>Mua ngay</small>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- LIST CATEGORY SOUND  -->
-      <div
-        class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]"
-      >
-        <span class="font-medium">DANH MỤC ÂM THANH</span>
-        <div class="relative w-full glide_category_sound">
-          <div class="overflow-hidden" data-glide-el="track">
-            <div
-              class="relative font-semibold w-full overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] text-[12px] sm:text-[14px]"
-            >
-              <div
-                class="cursor-pointer group text-center border hover:border-red-500 hover:text-red-500 transition duration-600 ease-in-out"
-              >
-                <div class="py-[10px]">
-                  <div
-                    class="text-[20px] sm:text-[30px] md:text-[40px] text-[#777777] group-hover:text-red-500"
-                  >
-                    <i class="fa-solid fa-microphone-lines"></i>
-                  </div>
-                  <div><span>Micro</span></div>
-                </div>
-              </div>
-              <div
-                class="cursor-pointer group text-center border hover:border-red-500 hover:text-red-500 transition duration-600 ease-in-out"
-              >
-                <div class="py-[10px]">
-                  <div
-                    class="text-[20px] sm:text-[30px] md:text-[40px] text-[#777777] group-hover:text-red-500"
-                  >
-                    <i class="fa-brands fa-bluetooth"></i>
-                  </div>
-                  <div><span>Loa blue</span></div>
-                </div>
-              </div>
-              <div
-                class="cursor-pointer group text-center border hover:border-red-500 hover:text-red-500 transition duration-600 ease-in-out"
-              >
-                <div class="py-[10px]">
-                  <div
-                    class="text-[20px] sm:text-[30px] md:text-[40px] text-[#777777] group-hover:text-red-500"
-                  >
-                    <i class="fa-solid fa-sim-card"></i>
-                  </div>
-                  <div><span>Sim</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
-            data-glide-el="controls"
-          >
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir="<"
-              aria-label="prev slide"
-            >
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir=">"
-              aria-label="next slide"
-            >
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- LIST SOUND -->
-      <div class="space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
-        <div class="w-full h-auto">
-          <img
-            class="rounded-[10px] w-full h-[80px] sm:h-[120px] md:h-[160px] lg:h-[180px] object-cover shadow-md border"
-            src="https://cdn.hoanghamobile.com/i/home/Uploads/2024/03/05/8-3-laptop-02_638452322907627577.png"
-          />
-        </div>
-        <div
-          class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]"
-        >
-          <div
-            class="flex items-center justify-between space-x-[5px] font-medium cursor-pointer"
-          >
-            <div
-              class="w-[150px] sm:w-[300px] bg-orange-500 py-[3px] text-center cursor-pointer rounded-[5px]"
-            >
-              <span class="text-white">ÂM THANH BÁN CHẠY</span>
-            </div>
-            <button
-              class="bg-orange-500 text-white px-[10px] py-[3px] rounded-[5px]"
-            >
-              <small> Xem thêm</small>
-              <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-          <div class="space-y-[10px]">
-            <div
-              id="list_sell_sound"
-              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]"
-            >
-              <a
-                href="product_detail.html"
-                id="item_sell_sound"
-                class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] transition duration-600 ease-in-out font-[600] space-y-[5px] cursor-pointer group"
-              >
-                <div class="relative">
-                  <img
-                    class="w-full object-cover rounded-[5px]"
-                    src="https://vietphone.vn/images/stories/virtuemart/product/resized/micro-thu-am-livestream-aqta-aq220-vietphone_400x400.jpg"
-                  />
-                  <div
-                    class="bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 hover:bg-gray-900 opacity-10"
-                  ></div>
-                  <small
-                    class="absolute rounded-[5px] bottom-0 left-0 bg-indigo-600 px-[5px] py-[2px] sm:px-[8px] sm:py-[3px] lg:px-4 lg:py-2 text-white"
-                  >
-                    HOT
-                  </small>
-                  <small
-                    class="absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-[40px] w-[40px] sm:h-[50px] sm:w-[50px] lg:h-[60px] lg:w-[60px] flex flex-col items-center justify-center mt-[5px] mr-[5px]"
-                  >
-                    <span class="font-bold">SALE</span>
-                    <span>-27%</span>
-                  </small>
-                </div>
-                <div
-                  class="text-start font-medium line-clamp-2 group-hover:text-blue-600 group-hover:underline"
-                >
-                  <span
-                    >Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A</span
-                  >
-                </div>
-                <div class="flex items-center justify-between flex-wrap fon">
-                  <span class="text-[#d70018]"> 22.990.000đ </span>
-                  <small class="text-[#707070] line-through">
-                    25.990.000đ
-                  </small>
-                </div>
-                <div class="flex items-center justify-between">
-                  <small class="">
-                    <i
-                      class="fa-solid fa-money-check-dollar text-orange-500"
-                    ></i>
-                    <span class="font-[600] underline">180 bán</span>
-                  </small>
-                  <small class="">
-                    <i class="fa-solid fa-heart text-red-500"></i>
-                    <span class="font-[600] underline">1.2k thích</span>
-                  </small>
-                </div>
-                <button
-                  class="w-full bg-red-500 group-hover:bg-red-600 py-[5px] transition duration-600 ease-in-out rounded-[5px] text-white"
-                >
-                  <i class="fa-solid fa-credit-card"></i>
-                  <small>Mua ngay</small>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- LIST CATEGORY ACCESSORY  -->
-      <div
-        class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]"
-      >
-        <span class="font-medium">DANH MỤC PHỤ KIỆN</span>
-        <div class="relative w-full glide_category_accessory">
-          <div class="overflow-hidden" data-glide-el="track">
-            <div
-              class="relative font-semibold w-full overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] text-[12px] sm:text-[14px]"
-            >
-              <div
-                class="cursor-pointer group text-center border hover:border-red-500 hover:text-red-500 transition duration-600 ease-in-out"
-              >
-                <div class="py-[10px]">
-                  <div
-                    class="text-[20px] sm:text-[30px] md:text-[40px] text-[#777777] group-hover:text-red-500"
-                  >
-                    <i class="fa-solid fa-headphones"></i>
-                  </div>
-                  <div><span>Tai nghe</span></div>
-                </div>
-              </div>
-              <div
-                class="cursor-pointer group text-center border hover:border-red-500 hover:text-red-500 transition duration-600 ease-in-out"
-              >
-                <div class="py-[10px]">
-                  <div
-                    class="text-[20px] sm:text-[30px] md:text-[40px] text-[#777777] group-hover:text-red-500"
-                  >
-                    <i class="fa-solid fa-battery-full"></i>
-                  </div>
-                  <div><span>Pin</span></div>
-                </div>
-              </div>
-              <div
-                class="cursor-pointer group text-center border hover:border-red-500 hover:text-red-500 transition duration-600 ease-in-out"
-              >
-                <div class="py-[10px]">
-                  <div
-                    class="text-[20px] sm:text-[30px] md:text-[40px] text-[#777777] group-hover:text-red-500"
-                  >
-                    <i class="fa-solid fa-sim-card"></i>
-                  </div>
-                  <div><span>Sim</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
-            data-glide-el="controls"
-          >
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir="<"
-              aria-label="prev slide"
-            >
-              <i class="fa-solid fa-chevron-left"></i>
-            </button>
-            <button
-              class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
-              data-glide-dir=">"
-              aria-label="next slide"
-            >
-              <i class="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- LIST ACCESSORY -->
-      <div class="space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
-        <div class="w-full h-auto">
-          <img
-            class="rounded-[10px] w-full h-[80px] sm:h-[120px] md:h-[160px] lg:h-[180px] object-cover shadow-md border"
-            src="https://cdn.hoanghamobile.com/i/home/Uploads/2024/03/05/tablet-lenovo-gia-soc-01.png"
-          />
-        </div>
-        <div
-          class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]"
-        >
-          <div
-            class="flex items-center justify-between space-x-[5px] font-medium cursor-pointer"
-          >
-            <div
-              class="w-[150px] sm:w-[300px] bg-orange-500 py-[3px] text-center cursor-pointer rounded-[5px]"
-            >
-              <span class="text-white">PHỤ KIỆN BÁN CHẠY</span>
-            </div>
-            <button
-              class="bg-orange-500 text-white px-[10px] py-[3px] rounded-[5px]"
-            >
-              <small> Xem thêm</small>
-              <i class="fa-solid fa-arrow-right-long"></i>
-            </button>
-          </div>
-          <div class="space-y-[10px]">
-            <div
-              id="list_sell_accessory"
-              class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]"
-            >
-              <a
-                href="product_detail.html"
-                id="item_sell_accessory"
-                class="bg-white shadow-md border hover:border-red-600 p-[8px] rounded-[5px] transition duration-600 ease-in-out font-[600] space-y-[5px] cursor-pointer group"
-              >
-                <div class="relative">
-                  <img
-                    class="w-full object-cover rounded-[5px]"
-                    src="https://vietphone.vn/images/stories/virtuemart/product/resized/dau-doc-the-nho_400x400.jpg"
-                  />
-                  <div
-                    class="bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 hover:bg-gray-900 opacity-10"
-                  ></div>
-                  <small
-                    class="absolute rounded-[5px] bottom-0 left-0 bg-indigo-600 px-[5px] py-[2px] sm:px-[8px] sm:py-[3px] lg:px-4 lg:py-2 text-white"
-                  >
-                    HOT
-                  </small>
-                  <small
-                    class="absolute top-0 right-0 bg-indigo-600 px-4 text-white rounded-full h-[40px] w-[40px] sm:h-[50px] sm:w-[50px] lg:h-[60px] lg:w-[60px] flex flex-col items-center justify-center mt-[5px] mr-[5px]"
-                  >
-                    <span class="font-bold">SALE</span>
-                    <span>-27%</span>
-                  </small>
-                </div>
-                <div
-                  class="text-start font-medium line-clamp-2 group-hover:text-blue-600 group-hover:underline"
-                >
-                  <span
-                    >Điện thoại iPhone 15 Pro (256GB) - Chính hãng VN/A</span
-                  >
-                </div>
-                <div class="flex items-center justify-between flex-wrap fon">
-                  <span class="text-[#d70018]"> 22.990.000đ </span>
-                  <small class="text-[#707070] line-through">
-                    25.990.000đ
-                  </small>
-                </div>
-                <div class="flex items-center justify-between">
-                  <small class="">
-                    <i
-                      class="fa-solid fa-money-check-dollar text-orange-500"
-                    ></i>
-                    <span class="font-[600] underline">180 bán</span>
-                  </small>
-                  <small class="">
-                    <i class="fa-solid fa-heart text-red-500"></i>
-                    <span class="font-[600] underline">1.2k thích</span>
-                  </small>
-                </div>
-                <button
-                  class="w-full bg-red-500 group-hover:bg-red-600 py-[5px] transition duration-600 ease-in-out rounded-[5px] text-white"
-                >
-                  <i class="fa-solid fa-credit-card"></i>
-                  <small>Mua ngay</small>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- BLOG -->
-      <div class="bg-white p-[5px] sm:p-[10px] rounded-[10px] shadow-md border">
-        <div
-          class="items-center overflow-x-hidden grid sm:grid-cols-2 gap-[10px] p-[10px]"
-        >
-          <div class="text-[14px] sm:text-[16px] lg:text-[18px] space-y-[10px]">
-            <h1
-              class="font-semibold text-blue-900 text-[18px] sm:text-[24px] lg:text-[30px]"
-            >
-              <span class="block w-full">TIN TỨC CÔNG NGHỆ</span> MỚi NHẤT!
-            </h1>
-            <p class="text-gray-500">Cập nhận tin tức công nghệ 24/24</p>
-            <button
-              class="text-white bg-blue-500 rounded-lg hover:bg-blue-600 px-[10px] md:px-[20px] py-[5px] md:py-[10px]"
-            >
-              Tham gia
-            </button>
-          </div>
-          <div class="overflow-hidden flex items-center justify-center">
-            <img
-              class="transition-all duration-300 ease-in-out hover:scale-105 object-cover h-[200px] sm:h-[250px] md:h-[300px] lg:h-[350px] w-auto"
-              src="https://bootstrapmade.com/demo/templates/FlexStart/assets/img/hero-img.png"
-            />
-          </div>
-        </div>
-        <div
-          id="list_blog"
-          class="gap-[20px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-[12px] sm:text-[14px]"
-        >
-          <div
-            id="item_blog"
-            class="flex flex-col overflow-hidden rounded-[10px] shadow-md cursor-pointer"
-          >
-            <div class="flex-shrink-0">
-              <img
-                class="h-[200px] w-full object-cover"
-                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1679&amp;q=80"
-                alt=""
-              />
-            </div>
-            <div
-              class="flex flex-1 flex-col justify-between bg-white p-[10px] lg:p-[20px] space-y-[10px]"
-            >
-              <div class="flex-1 space-y-[10px]">
-                <a href="#" class="hover:underline font-medium text-white"
-                  >IPHONE</a
-                >
-                <a
-                  href=""
-                  class="font-semibold text-gray-900 text-[14px] sm:text-[16px] line-clamp-2 hover:underline hover:text-blue-600"
-                  >Apple bổ sung tính năng cho iOS 17.4, giúp người dùng dễ dàng
-                  biết tình trạng pin iPhone có bình thường hay không.</a
-                >
-                <a class="text-gray-500 line-clamp-3"
-                  >Bản thử nghiệm iOS 17.4 beta 4 được Apple phát hành cho nhà
-                  phát triển ngày 20/2. Khi vào Cài đặt > Pin, người dùng sẽ
-                  thấy hai tùy chọn mới là Tình trạng pin và Tối ưu hóa sạc. Tại
-                  phần Tình trạng pin, người dùng có thể xem pin trên điện thoại
-                  của họ có đang hoạt động ổn định (bình thường) không.</a
-                >
-              </div>
-              <div class="flex items-center space-x-[10px] text-[14px]">
-                <div class="flex-shrink-0">
-                  <img
-                    class="h-[40px] w-[40px] rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
-                    alt=""
-                  />
-                </div>
-                <div class="text-gray-500">
-                  <a href="#" class="hover:underline font-medium text-gray-900"
-                    >Roel Aufderehar</a
-                  ><br />
-                  <time datetime="2020-03-10">Mar 10, 2020</time>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2" data-glide-el="controls">
+          <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
+            data-glide-dir="<" aria-label="prev slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
+            data-glide-dir=">" aria-label="next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </div>
-    <!-- FOOTER -->
-    <footer class="bg-white shadow-md border space-y-[10px]">
-      <div
-        class="py-[10px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] text-[10px] sm:text-[12px] md:text-[14px]"
-      >
-        <div
-          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 font-medium gap-x-[5px] gap-y-[10px] sm:gap-[20px]"
-        >
-          <div class="space-y-[5px]">
-            <span
-              >Kết nối với
-              <span class="text-red-600 font-[600]">VIETPHONE</span></span
-            >
-            <div class="flex items-center gap-[10px]">
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-pink-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-facebook-messenger"></i>
-              </a>
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-blue-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-facebook-f"></i>
-              </a>
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-gray-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-              <a
-                href=""
-                class="border w-[30px] h-[30px] flex items-center justify-center rounded-full hover:text-red-500 transition duration-500 ease-in-out"
-              >
-                <i class="fa-brands fa-youtube"></i>
-              </a>
-            </div>
-            <a
-              href=""
-              class="text-red-500 hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-            >
-              <i class="fa-regular fa-hand-point-right"></i>
-              <span>Tìm cửa hàng gần nhất</span>
-              <i class="fa-regular fa-hand-point-left"></i>
+    <!-- LIST CATEGORY PHONE -->
+    <div
+      class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
+      <span class="font-medium">DANH MỤC ĐIỆN THOẠI</span>
+      <div class="relative w-full glide_category_phone">
+        <div class="overflow-hidden" data-glide-el="track">
+          <div
+            class="relative w-full overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+            <a href="product.html"
+              class="cursor-pointer text-center border hover:border-red-500 transition duration-500 ease-in-out">
+              <div class="aspect-[3/1] p-[10px]">
+                <img class="object-cover h-full w-full"
+                  src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/6/2/637582325361253577_Xiaomi@2x.jpg" />
+              </div>
+            </a>
+            <a href="product.html"
+              class="cursor-pointer text-center border hover:border-red-500 transition duration-500 ease-in-out">
+              <div class="aspect-[5/2] px-[10px] py-[5px]">
+                <img class="object-cover h-full w-full"
+                  src="https://images.fpt.shop/unsafe/fit-in/108x40/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2021/7/14/637618612858518848_Lenovo@2x.jpg" />
+              </div>
             </a>
           </div>
-          <div>
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-              >Chính sách Bảo Mật</a
-            ><br />
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-              >Chính sách Đổi trả - Kiểm hàng</a
-            ><br />
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-            >
-              Chính sách Trả góp</a
-            ><br />
-            <a
-              href=""
-              class="hover:text-blue-500 hover:underline transition duration-500 ease-in-out"
-              >Chính sách Vận chuyển</a
-            ><br />
-          </div>
-          <div>
-            <span>Phương thức thanh toán</span>
-            <div class="flex flex-wrap items-center justify-start gap-[5px]">
-              <div div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x35,webp/media/wysiwyg/apple-pay-og.png"
-                />
-              </div>
-              <div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/vnpay-logo.png"
-                />
-              </div>
-              <div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x/media/wysiwyg/momo_1.png"
-                />
-              </div>
-              <div class="border rounded-[5px] p-[2px]">
-                <img
-                  class="h-[30px] w-[50px]"
-                  src="https://cdn2.cellphones.com.vn/x35,webp/media/logo/payment/zalopay-logo.png"
-                />
-              </div>
-            </div>
-          </div>
-          <div>
-            <img
-              class="h-[40px]"
-              src="https://vietphone.vn/images/vietphone-dathongbao.png"
-            />
-          </div>
         </div>
-        <div
-          class="sm:grid grid-cols-2 gap-[10px] lg:gap-[20px] space-y-[10px] sm:space-y-0"
-        >
-          <div
-            class="h-[160px] sm:h-[230px] md:h-[330px] lg:h-[430px] w-full overflow-y-auto p-[10px] border shadow-md space-y-[10px]"
-          >
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div
-              class="flex space-x-[10px] hover:border-b-red-600 border-b group cursor-pointer pb-[10px] transition ease-in-out duration-500"
-            >
-              <img
-                class="h-[60px] md:h-[80px] w-[60px] lg:h-[100px] md:w-[80px] lg:w-[100px] object-cover rounded-[5px]"
-                src="https://lh5.googleusercontent.com/p/AF1QipNvCwwexs-oQdvVKrRBAvFEtxgScba92f3dKMsl=w408-h344-k-no"
-              />
-              <div>
-                <span
-                  class="font-bold group-hover:text-red-600 transition ease-in-out duration-500"
-                  >VIETPHONE 16</span
-                >
-                <div class="gap-x-[5px] line-clamp-3">
-                  <i class="fa-solid fa-location-dot"></i>
-                  <a
-                    href=""
-                    class="text-blue-600 group-hover:text-blue-700 group-hover:underline transition ease-in-out duration-500"
-                  >
-                    Số 695, Đường DT743, P Tân Đông Hiệp, TP. Dĩ An, Bình Dương
-                    ( Ngay Ngã Ba Ông Xã)
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-[10px] border shadow-md">
-            <iframe
-              class="w-full h-[200px] md:h-[300px] lg:h-[400px]"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3294.3804106855905!2d106.75983771596195!3d10.910341479336862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d9e3cf243c85%3A0xf43a6cdb2a9c1147!2sVIETPHONE%2016!5e0!3m2!1svi!2s!4v1709950865009!5m2!1svi!2s"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            >
-            </iframe>
-          </div>
-        </div>
-      </div>
-      <div
-        class="bg-[#f7f7f7] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[10px]"
-      >
-        <div class="text-[12px] text-center">
-          <span class="font-medium"
-            >CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ CÔNG NGHỆ VIỄN THÔNG
-            VIETPHONE.VN</span
-          >
-          <span
-            >Giấy phép ĐKKD số 3702940296 do sở Kế hoạch và Đầu tư Tỉnh Bình
-            Dương Cấp ngày 17/12/2020 </span
-          ><br />
-          <span
-            >Địa chỉ: Số 217, Đường Nguyễn An Ninh, Khu Phố Bình Minh 2, Phường
-            Dĩ An, Thành phố Dĩ An, Tỉnh Bình Dương, Việt Nam</span
-          >
-          <div class="flex items-center justify-center space-x-[10px]">
-            <div class="space-x-[5px]">
-              <span>Email :</span>
-              <a
-                class="hover:underline hover:text-blue-700 text-blue-600 font-[600] transition ease-in-out duration-500"
-                href=""
-                >lelinhusa1704@gmail.com</a
-              >
-            </div>
-            <div class="space-x-[5px]">
-              <span>Điện thoại :</span>
-              <a
-                class="hover:underline hover:text-blue-700 text-blue-600 font-[600] transition ease-in-out duration-500"
-                href=""
-                >094777 4777</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- MODAL LOGIN dùng Header-->
-    <div class="flex items-center justify-center">
-      <div
-        id="modal_login"
-        class="hs-overlay hidden size-full fixed top-0 z-[20] overflow-x-hidden overflow-y-auto pointer-events-none"
-      >
-        <div
-          class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all w-[300px] sm:w-[400px]"
-        >
-          <div
-            class="flex flex-col bg-white border shadow-sm rounded-[10px] pointer-events-auto p-[20px] space-y-[10px] text-[12px] sm:text-[14px]"
-          >
-            <div class="flex justify-between items-center p-[10px] border-b">
-              <h3 class="font-bold text-gray-800">
-                ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN
-              </h3>
-              <button
-                type="button"
-                class="hs-dropup-toggle flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
-                data-hs-overlay="#modal_login"
-              >
-                <i class="fa-solid fa-circle-xmark text-[20px]"></i>
-              </button>
-            </div>
-            <div class="text-center space-y-[10px]">
-              <div class="flex items-center justify-center">
-                <img
-                  src="../../static/images/login.png"
-                  class="w-[150px] h-[150px] sm:h-[200px] sm:w-[200px]"
-                />
-              </div>
-              <div class="text-gray-600">
-                <span
-                  >Nhập số điện thoại mua hàng để hưởng đặc quyền riêng tại
-                  <span class="text-red-500 font-medium">VIETPHONE.VN</span>
-                </span>
-              </div>
-              <input
-                class="w-full h-[40px] border-gray-300 border-[2px] focus:outline-none focus:border-blue-500 rounded-[5px] px-[20px] ease-in-out transition duration-500 hover:border-blue-500"
-                placeholder="Nhập số điện thoại"
-              />
-              <button
-                class="bg-red-600 px-[20px] py-[10px] rounded-[5px] text-white hover:bg-red-700 ease-in-out transition duration-500"
-              >
-                TIẾP TỤC
-              </button>
-            </div>
-          </div>
+        <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2" data-glide-el="controls">
+          <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
+            data-glide-dir="<" aria-label="prev slide">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full"
+            data-glide-dir=">" aria-label="next slide">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
       </div>
     </div>
-    <!-- BUTTON SCROLL TOP dùng chung -->
-    <button
-      onclick="scrollToTop()"
-      class="scroll-to-top fixed bottom-4 right-4 h-[30px] w-[30px] bg-gray-800 text-white rounded-full transition duration-300 hover:bg-gray-700 hover:text-gray-200"
-    >
-      <i class="fa-solid fa-caret-up"></i>
-    </button>
-    <!-- Js dùng chung-->
-    <script src="../../static/js/index.js"></script>
-    <!-- Preline dùng chung-->
-    <script src="../../../node_modules/preline/dist/preline.js"></script>
-    <!-- Glide dùng index-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
-    <!-- dùng index -->
-    <script>
-      var glide_category_accessory = new Glide(".glide_category_accessory", {
-        type: "carousel",
-        focusAt: "center",
-        perView: 8,
-        autoplay: 3000,
-        animationDuration: 700,
-        gap: 0,
-        classes: { activeNav: "[&>*]:bg-slate-700" },
-        breakpoints: {
-          1024: { perView: 7 },
-          720: { perView: 6 },
-          640: { perView: 5 },
-          420: { perView: 4 },
-          320: { perView: 3 },
-        },
-      });
-      glide_category_accessory.mount();
+    <!-- FLASH SALE -->
+    <div class="space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
+      <div class="bg-[#f9415c] shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px]">
 
-      var glide_category_sound = new Glide(".glide_category_sound", {
-        type: "carousel",
-        focusAt: "center",
-        perView: 8,
-        autoplay: 3000,
-        animationDuration: 700,
-        gap: 0,
-        classes: { activeNav: "[&>*]:bg-slate-700" },
-        breakpoints: {
-          1024: { perView: 7 },
-          720: { perView: 6 },
-          640: { perView: 5 },
-          420: { perView: 4 },
-          320: { perView: 3 },
-        },
-      });
-      glide_category_sound.mount();
-
-      var glide_banner_discount = new Glide(".glide_banner_discount", {
-        type: "carousel",
-        focusAt: "center",
-        perView: 3,
-        autoplay: 2000,
-        animationDuration: 700,
-        gap: 20,
-        classes: { activeNav: "[&>*]:bg-slate-700" },
-        breakpoints: {
-          640: { perView: 2 },
-          320: { perView: 1 },
-        },
-      });
-      glide_banner_discount.mount();
-
-      var glide_category_phone = new Glide(".glide_category_phone", {
-        type: "carousel",
-        focusAt: "center",
-        perView: 7,
-        autoplay: 3000,
-        animationDuration: 700,
-        gap: 0,
-        classes: { activeNav: "[&>*]:bg-slate-700" },
-        breakpoints: {
-          1024: { perView: 6 },
-          720: { perView: 5 },
-          640: { perView: 4 },
-          420: { perView: 3 },
-          320: { perView: 2 },
-        },
-      });
-      glide_category_phone.mount();
-
-      var slider_banner1 = new Glide(".slider_banner1", {
-        type: "slider",
-        focusAt: "center",
-        perView: 1,
-        autoplay: 2000,
-        animationDuration: 700,
-        gap: 0,
-        classes: { activeNav: "[&>*]:text-red-600" },
-      });
-      slider_banner1.mount();
-
-      var slider_banner2 = new Glide(".slider_banner2", {
-        type: "slider",
-        focusAt: "center",
-        perView: 1,
-        autoplay: 3000,
-        animationDuration: 700,
-        gap: 0,
-        classes: { activeNav: "[&>*]:text-red-600" },
-      });
-      slider_banner2.mount();
-
-      var slider_banner3 = new Glide(".slider_banner3", {
-        type: "slider",
-        focusAt: "center",
-        perView: 1,
-        autoplay: 3000,
-        animationDuration: 700,
-        gap: 0,
-        classes: { activeNav: "[&>*]:text-red-600" },
-      });
-      slider_banner3.mount();
-
-
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const targetDate = new Date('2024-04-01T08:00:00').getTime();
-        const distance = targetDate - now;
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        var countdown_flash_sale= document.getElementById('countdown_flash_sale');
-
-        countdown_flash_sale.innerHTML = `
-                <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
-                    <h6 class="text-white font-bold text-[14px] sm:text-[24px]">${days}</h6>
-                    <small>Ngày</small>
+        <div class="text-white flex items-center justify-between gap-[5px]">
+          <div class="flex items-center gap-[5px] text-[16px] sm:text-[16px] md:text-[24px] lg:text-[28px]">
+            <div class="border rounded-full p-[5px] sm:p-[10px] flex items-center justify-center">
+              <i class="fa-solid fa-fire"></i>
+            </div>
+            <h3 class="font-bold animate-bounce">
+              HOT SALE
+            </h3>
+          </div>
+          <div id="countdown_flash_sale" class="flex items-center justify-center z-10 space-x-[5px]">
+            <!-- countdown flash sale -->
+          </div>
+        </div>
+        <div class="space-y-[10px]">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-[15px]">
+            <a href="product_detail.html"
+              class="bg-white shadow-md border hover:border-red-600 p-[10px] rounded-[5px] transition duration-500 ease-in-out group space-y-[10px]">
+              <div class="relative aspect-square">
+                <img class="w-full h-full object-cover rounded-[5px]"
+                  src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448464173065252_banner%20(3).png" />
+                <small class="absolute rounded-[5px] bottom-0 left-0 bg-indigo-600 px-[12px] py-[6px] text-white">
+                  HOT
+                </small>
+                <small
+                  class="absolute aspect-square top-0 right-0 bg-indigo-600 px-4 text-white rounded-full flex flex-col items-center justify-center mt-[5px] mr-[5px]">
+                  <span class="font-bold">SALE</span>
+                  <span>-27%</span>
+                </small>
+              </div>
+              <div class="space-y-[5px]">
+                <div class="text-start font-medium line-clamp-1 group-hover:text-blue-600 group-hover:underline">
+                  <span>Điện thoại iPhone 15 Pro chính hãng 150GB</span>
                 </div>
-                <span>:</span>
-                <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
-                  <h6 class="text-white font-bold text-[14px] sm:text-[24px]">${hours}</h6>
-                  <small>Giờ</small>
+                <div class="flex items-center justify-between flex-wrap">
+                  <span class="text-[#d70018]"> 22.990.000đ </span>
+                  <small class="text-[#707070] line-through">
+                    25.990.000đ
+                  </small>
                 </div>
-                <span>:</span>
-                <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
-                  <h6 class="text-white font-bold text-[14px] sm:text-[24px]">${minutes}</h6>
-                  <small>Phút</small>
+                <div class="flex items-center justify-between">
+                  <small class="">
+                    <i class="fa-solid fa-money-check-dollar text-orange-500"></i>
+                    <span class="font-[600] underline">180 bán</span>
+                  </small>
+                  <small class="">
+                    <i class="fa-solid fa-heart text-red-500"></i>
+                    <span class="font-[600] underline">1.2k thích</span>
+                  </small>
                 </div>
-                <span>:</span>
-                <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
-                  <h6 class="text-white font-bold text-[14px] sm:text-[24px]">${seconds}</h6>
-                  <small>Giây</small>
+                <div class="flex items-center">
+                  <span class="fa fa-star text-orange-500"></span>
+                  <span class="fa fa-star text-orange-500"></span>
+                  <span class="fa fa-star text-orange-500"></span>
+                  <span class="fa fa-star text-orange-500"></span>
+                  <span class="fa fa-star text-orange-500"></span>
                 </div>
-        `;
+              </div>
+              <button
+                class="w-full bg-red-500 group-hover:bg-red-600 py-[5px] transition duration-600 ease-in-out rounded-[5px] text-white">
+                <i class="fa-solid fa-credit-card"></i>
+                <small>Mua ngay</small>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <!-- BUTTON SCROLL TOP dùng chung -->
+      <button onclick="scrollToTop()" class="z-50 scroll-to-top fixed end-2 bottom-1 w-[30px] md:w-[50px] h-[30px] md:h-[50px]
+         bg-gray-700 text-white rounded-full transition duration-300 hover:bg-gray-900 hover:text-gray-200">
+        <i class="fa-solid fa-arrow-up text-[16px] md:text-[24px]"></i>
+      </button>
+      <div class="z-50 fixed left-2 bottom-2 speeddial-button">
+        <div id="speed-dial-menu-default" class="speed-dial-menu flex flex-col items-center hidden mb-[10px] space-y-2">
+          <button type="button"
+            class="flex justify-center items-center w-[30px] md:w-[50px] h-[30px] md:h-[50px] text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative">
+            <i class="fa-solid fa-square-phone text-[16px] md:text-[24px]"></i>
+          </button>
+          <button type="button"
+            class="flex justify-center items-center w-[30px] md:w-[50px] h-[30px] md:h-[50px] text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative">
+            <i class="fa-brands fa-tiktok text-[16px] md:text-[24px]"></i>
+          </button>
+          <button type="button"
+            class="flex justify-center items-center w-[30px] md:w-[50px] h-[30px] md:h-[50px] text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative">
+            <i class="fa-brands fa-facebook-messenger text-[16px] md:text-[24px]"></i>
+          </button>
+          <button type="button"
+            class="flex justify-center items-center w-[30px] md:w-[50px] h-[30px] md:h-[50px] text-gray-900 hover:text-gray-900 bg-white rounded-full border border-gray-300 shadow-sm hover:bg-gray-50  focus:outline-none relative">
+            <i class="fa-brands fa-facebook text-[16px] md:text-[24px]"></i>
+          </button>
+        </div>
+        <button type="button" aria-expanded="false"
+          class="flex items-center justify-center text-white bg-indigo-600 rounded-full w-[30px] md:w-[50px] h-[30px] md:h-[50px] hover:bg-indigo-700 focus:ring-4 focus:outline-none ">
+          <i class="fa-solid fa-phone text-[16px] md:text-[24px]"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  
+  <!--  -->
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
+  <!-- Js dùng chung-->
+  <script src="../../static/js/index.js"></script>
+  <!-- Preline dùng chung-->
+  <script src="../../../node_modules/preline/dist/preline.js"></script>
+  <!-- Glide dùng index-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+  <!-- Page Done -->
+  <script src="https://cdn.jsdelivr.net/npm/pagedone@1.1.2/src/js/pagedone.js"></script>
+
+  <!-- dùng index -->
+  <script>
+    var glide_category_accessory = new Glide(".glide_category_accessory", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 8,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:bg-slate-700" },
+      breakpoints: {
+        1024: { perView: 7 },
+        720: { perView: 6 },
+        640: { perView: 5 },
+        420: { perView: 4 },
+        320: { perView: 3 },
+      },
+    });
+    glide_category_accessory.mount();
+
+    var glide_category_sound = new Glide(".glide_category_sound", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 8,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:bg-slate-700" },
+      breakpoints: {
+        1024: { perView: 7 },
+        720: { perView: 6 },
+        640: { perView: 5 },
+        420: { perView: 4 },
+        320: { perView: 3 },
+      },
+    });
+    glide_category_sound.mount();
+
+    var glide_banner_discount = new Glide(".glide_banner_discount", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 3,
+      autoplay: 2000,
+      animationDuration: 700,
+      gap: 20,
+      classes: { activeNav: "[&>*]:bg-slate-700" },
+      breakpoints: {
+        640: { perView: 2 },
+        320: { perView: 1 },
+      },
+    });
+    glide_banner_discount.mount();
+
+    var glide_category_phone1 = new Glide(".glide_category_phone1", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 7,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 10,
+      classes: { activeNav: "[&>*]:bg-slate-700" },
+      breakpoints: {
+        1024: { perView: 6 },
+        720: { perView: 5 },
+        640: { perView: 4 },
+        420: { perView: 3 },
+        320: { perView: 2 },
+      },
+    });
+    glide_category_phone1.mount();
+
+    var glide_category_phone = new Glide(".glide_category_phone", {
+      type: "carousel",
+      focusAt: "center",
+      perView: 7,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:bg-slate-700" },
+      breakpoints: {
+        1024: { perView: 6 },
+        720: { perView: 5 },
+        640: { perView: 4 },
+        420: { perView: 3 },
+        320: { perView: 2 },
+      },
+    });
+    glide_category_phone.mount();
+
+    var slider_banner1 = new Glide(".slider_banner1", {
+      type: "slider",
+      focusAt: "center",
+      perView: 1,
+      autoplay: 2000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:text-red-600" },
+    });
+    slider_banner1.mount();
+
+    var slider_banner2 = new Glide(".slider_banner2", {
+      type: "slider",
+      focusAt: "center",
+      perView: 1,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:text-red-600" },
+    });
+    slider_banner2.mount();
+
+    var slider_banner3 = new Glide(".slider_banner3", {
+      type: "slider",
+      focusAt: "center",
+      perView: 1,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:text-red-600" },
+    });
+    slider_banner3.mount();
+    var slider_banner4 = new Glide(".slider_banner4", {
+      type: "slider",
+      focusAt: "center",
+      perView: 1,
+      autoplay: 3000,
+      animationDuration: 700,
+      gap: 0,
+      classes: { activeNav: "[&>*]:text-red-600" },
+    });
+    slider_banner4.mount();
+
+
+    let countdown = true;
+    let updateInterval;
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const targetDate = new Date('2024-05-10').getTime();
+      const distance = targetDate - now;
+      var days;
+      var hours;
+      var minutes;
+      var seconds;
+      if (distance < 0) {
+        days = 0;
+        hours = 0;
+        minutes = 0;
+        seconds = 0;
+      } else {
+        days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        seconds = Math.floor((distance % (1000 * 60)) / 1000);
       }
-      updateCountdown();
-      const updateInterval = setInterval(updateCountdown, 1000);
-    </script>
-  </body>
+      if (distance <= 0) {
+        clearInterval(updateInterval);
+      }
+      if (countdown && !updateInterval) {
+        updateInterval = setInterval(updateCountdown, 1000);
+      } else if (!countdown && updateInterval) {
+        clearInterval(updateInterval);
+        updateInterval = null;
+      }
+      var countdown_flash_sale = document.getElementById('countdown_flash_sale');
+      if (countdown_flash_sale && countdown_flash_sale !== null) {
+        countdown_flash_sale.innerHTML = `
+                  <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
+                      <span class="text-white font-bold text-[14px] sm:text-[24px]">${days}</span><br/>
+                      <small>Ngày</small>
+                  </div>
+                  <span>:</span>
+                  <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
+                    <span class="text-white font-bold text-[14px] sm:text-[24px]">${hours}</span><br/>
+                    <small>Giờ</small>
+                  </div>
+                  <span>:</span>
+                  <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
+                    <span class="text-white font-bold text-[14px] sm:text-[24px]">${minutes}</span><br/>
+                    <small>Phút</small>
+                  </div>
+                  <span>:</span>
+                  <div class="text-center border w-[35px] sm:w-[40px] md:w-[50px] lg:w-[60px] py-[2px] lg:py-[4px] rounded-[5px]">
+                    <span class="text-white font-bold text-[14px] sm:text-[24px]">${seconds}</span><br/>
+                    <small>Giây</small>
+                  </div>
+          `;
+      } else {
+        clearInterval(updateInterval);
+      }
+
+    }
+    updateCountdown();
+  </script>
+</body>
+
 </html>

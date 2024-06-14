@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="../../static/fonts/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet" />
+    <!-- TailwindCss -->
+    <link href="../../styles/output.css" rel="stylesheet" />
+    <!-- Css -->
+    <link rel="stylesheet" href="../../static/css/index.css" />
+</head>
+
+<body
+    class="px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px] py-[20px] bg-[#f7f7f7] space-y-[10px] md:space-y-[20px] font-semibold">
+    <div class="flex gap-x-[10px] h-[340px]">
+        <div class="hidden md:block relative bg-white rounded-[10px] shadow-md border p-[5px] font-[400] 
+            w-[200px] text-[12px] md:text-[14px]">
+            <div class="dropdown ">
+                <a href="/"
+                    class="flex items-center hover:bg-[#fff1f1] p-[10px] py-[5px] rounded-[5px] hover:text-[#e11c1c]">
+                    <div class="flex-1 flex items-center space-x-[5px]">
+                        <div class="w-[30px]">
+                            <i class="fa-solid fa-mobile-retro text-[20px] leading-none"></i>
+                        </div>
+                        <h5 class="leading-none">Điện thoại</h5>
+                    </div>
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+                <div id="divA" class="dropdown_menu absolute left-full top-0 ml-[-10px] z-[40] hidden">
+                    <div class="flex flex-wrap gap-[20px] bg-white border shadow-md rounded-[5px] ml-[20px] p-[10px]">
+                        <div class="space-y-[2px]">
+                            <strong class="font-medium">Thương hiệu điện thoại</strong>
+                            <div>
+                                <a href="/" class="hover:text-[#0e92f7]">
+                                    <h4>Iphone</h4>
+                                </a>
+                                <a href="/" class="hover:text-[#0e92f7]">
+                                    <h4>Oppo</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="divB" class="flex-1 grid grid-cols-7 gap-[10px]">
+            <div class=" col-span-7 lg:col-span-5 bg-white rounded-[5px] shadow-md border
+                 sm:h-[340px] h-[160px]">
+                <div class="relative overflow-hidden slider_banner4 rounded-[5px]">
+                    <div class="overflow-hidden" data-glide-el="track">
+                        <ul class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] 
+                        [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                            <li class="rounded-[10px]">
+                                <img src="../../static/images/10.jpg"
+                                    class="w-full h-[160px] sm:h-[280px] object-cover" />
+                            </li>
+                           
+                        </ul>
+                    </div>
+                    <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 text-white"
+                        data-glide-el="controls">
+                        <button
+                            class="inline-flex items-center justify-center w-8 h-8 transition duration-300 rounded-full bg-[#ed1c24]"
+                            data-glide-dir="<" aria-label="prev slide">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button
+                            class="inline-flex items-center justify-center w-8 h-8 transition duration-300 rounded-full bg-[#ed1c24]"
+                            data-glide-dir=">" aria-label="next slide">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class=" w-full space-x-[5px] h-[60px] text-[14px] hidden sm:flex items-center justify-center overflow-x-auto"
+                        data-glide-el="controls[nav]">
+                        <button data-glide-dir="=0" class="h-[60px] w-[200px] text-center p-[5px]">
+                            <h5 class="leading-none line-clamp-3">Use flex-row to position </h5>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden lg:flex flex-col col-span-2 h-[340px] space-y-[10px] p-[10px] bg-white rounded-[10px] shadow-md border">
+                <div class="flex-1 rounded-[5px] overflow-hidden flex items-center justify-center h-[100px]">
+                    <div class=" w-full relative overflow-hidden slider_banner1">
+                        <div class="overflow-hidden" data-glide-el="track">
+                            <ul class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] 
+                                [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                                <li class="">
+                                    <img src="../../static/images/9.jpg"
+                                        class="h-[100px] w-full object-cover rounded-[5px]" />
+                                </li>
+                                <li class="">
+                                    <img src="../../static/images/10.jpg"
+                                        class="h-[100px] w-full object-cover rounded-[5px]" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 rounded-[5px] overflow-hidden flex items-center justify-center">
+                    <div class=" w-full relative overflow-hidden slider_banner2">
+                        <div class="overflow-hidden" data-glide-el="track">
+                            <ul class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] 
+                                [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                                <li class="">
+                                    <img src="../../static/images/9.jpg"
+                                        class="h-[100px] w-full object-cover rounded-[5px]" />
+                                </li>
+                                <li class="">
+                                    <img src="../../static/images/10.jpg"
+                                        class="h-[100px] w-full object-cover rounded-[5px]" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 rounded-[5px] overflow-hidden flex items-center justify-center">
+                    <div class=" w-full relative overflow-hidden slider_banner3">
+                        <div class="overflow-hidden" data-glide-el="track">
+                            <ul class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] 
+                                [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                                <li class="">
+                                    <img src="../../static/images/9.jpg"
+                                        class="h-[100px] w-full object-cover rounded-[5px]" />
+                                </li>
+                                <li class="">
+                                    <img src="../../static/images/10.jpg"
+                                        class="h-[100px] w-full object-cover rounded-[5px]" />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script>
+        function matchWidth() {
+            const divA = document.getElementById('divA');
+            const divB = document.getElementById('divB');
+            const newWidth = (divB.offsetWidth) + 20;
+            divA.style.width = `${newWidth}px`;
+        }
+        window.addEventListener('resize', matchWidth);
+        window.addEventListener('load', matchWidth);
+    </script>
+    <script>
+        var slider_banner1 = new Glide(".slider_banner1", {
+            type: "slider",
+            focusAt: "center",
+            perView: 1,
+            autoplay: 2000,
+            animationDuration: 700,
+            gap: 0,
+            classes: { activeNav: "[&>*]:text-red-600" },
+        });
+        slider_banner1.mount();
+        var slider_banner2 = new Glide(".slider_banner2", {
+            type: "slider",
+            focusAt: "center",
+            perView: 1,
+            autoplay: 2000,
+            animationDuration: 700,
+            gap: 0,
+            classes: { activeNav: "[&>*]:text-red-600" },
+        });
+        slider_banner2.mount();
+        var slider_banner3 = new Glide(".slider_banner3", {
+            type: "slider",
+            focusAt: "center",
+            perView: 1,
+            autoplay: 2000,
+            animationDuration: 700,
+            gap: 0,
+            classes: { activeNav: "[&>*]:text-red-600" },
+        });
+        slider_banner3.mount();
+        var slider_banner4 = new Glide(".slider_banner4", {
+            type: "slider",
+            focusAt: "center",
+            perView: 1,
+            autoplay: 2000,
+            animationDuration: 700,
+            gap: 0,
+            classes: { activeNav: "[&>*]:text-red-600" },
+        });
+        slider_banner4.mount();
+    </script>
+</body>
+
+</html>

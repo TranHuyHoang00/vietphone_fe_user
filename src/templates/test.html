@@ -1,0 +1,56 @@
+<a href="{{ item.product_variant.get_product_page.url }}" class="bg-white shadow-md border hover:border-red-600 p-[10px] rounded-[5px] transition duration-500 ease-in-out group space-y-[10px]">
+    <div class="relative aspect-square">
+      {% if item.product_variant.first_image %}
+        <img
+          class="w-full h-full object-cover rounded-[5px]" title="{{ item.product_variant.first_image.alt }}"
+          alt="{{ item.product_variant.first_image.alt }}"
+          src="{{ HOST_DOMAINT }}{{ item.product_variant.first_image.image.url }}" loading="lazy"
+        />
+      {% else %}
+        <img
+          class="w-full h-full object-cover rounded-[5px]"
+            src="{% static 'images/image-not-found1.png' %}" loading="lazy"/>
+      {% endif %}
+      <div class="bottom-0 left-0 absolute">
+        <div class="flex flex-wrap gap-[5px]">
+          {% for tag in item.product_variant.product.tags.all %}
+            <small class="rounded-[5px] bg-indigo-600 px-[12px] py-[6px] text-white">
+              {{ tag.name }}
+            </small>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="space-y-[5px]">
+      <div class="text-start font-medium line-clamp-1 group-hover:text-blue-600 group-hover:underline">
+        <h2>{{ item.product_variant.product.name }}</h2>
+      </div>
+      <div class="flex items-center justify-between flex-wrap">
+          <span class="text-[#d70018]"> {{ item.discount_price |floatformat:0|intcomma }} đ</span>
+          <small class="text-[#707070] line-through">
+              {{ item.product_variant.regular_price |floatformat:0|intcomma }} đ
+          </small>
+      </div>
+      <div class="flex items-center justify-between">
+        <small class="">
+          <i class="fa-solid fa-money-check-dollar text-orange-500"></i>
+          <span class="font-[600] underline">180 bán</span>
+        </small>
+        <small class="">
+          <i class="fa-solid fa-heart text-red-500"></i>
+          <span class="font-[600] underline">1.2k thích</span>
+        </small>
+      </div>
+      <div class="flex items-center">
+        <span class="fa fa-star text-orange-500"></span>
+        <span class="fa fa-star text-orange-500"></span>
+        <span class="fa fa-star text-orange-500"></span>
+        <span class="fa fa-star text-orange-500"></span>
+        <span class="fa fa-star text-orange-500"></span>
+      </div>
+    </div>
+    <button class="w-full bg-red-500 group-hover:bg-red-600 py-[5px] transition duration-600 ease-in-out rounded-[5px] text-white">
+      <i class="fa-solid fa-credit-card"></i>
+      <small>Mua ngay</small>
+    </button>
+  </a>

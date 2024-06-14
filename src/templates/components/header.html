@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Header</title>
+  <!-- Font Awesome -->
+  <link href="../../static/fonts/fontawesome-free-6.5.1-web/css/all.css" rel="stylesheet" />
+  <!-- TailwindCss -->
+  <link href="../../styles/output.css" rel="stylesheet" />
+  <!-- Css -->
+  <link rel="stylesheet" href="../../static/css/index.css" />
+</head>
+
+<body>
+  <header class="fixed w-full bg-white z-50">
+    <div id="htmlBannerHeader" class="relative" data-hs-carousel='{"loadingClasses": "opacity-0","isAutoPlay": true}'>
+      <div class="hs-carousel relative overflow-hidden w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] bg-white">
+        <div
+          class="hs-carousel-body absolute top-0 bottom-0 start-0 flex flex-nowrap transition-transform duration-700 opacity-0">
+          <div class="hs-carousel-slide">
+            <div class="flex justify-center">
+              <img class="w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] object-cover"
+                src="https://cdn2.viettelstore.vn/images/Advertises/1170x50-(2)_16147411001032024.png" />
+            </div>
+          </div>
+          <div class="hs-carousel-slide">
+            <div class="flex justify-center">
+              <img class="w-full h-[20px] sm:h-[25px] md:h-[30px] lg:h-[35px] object-cover"
+                src="https://cdn2.viettelstore.vn/images/Advertises/TOP-PC_16411500905092023.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="htmlHeaderNav"
+      class="bg-[#cd1818] py-[5px] space-y-[10px] px-[10px] sm:px-[20px] md:px-[40px] lg:px-[80px]">
+      <div class="flex flex-wrap gap-[5px] items-center justify-between text-white space-x-0 sm:space-x-[5px] lg:space-x-[10px]
+        lg:text-[14px] text-[12px]">
+        <a href="../home/index.html" class="order-1">
+          <img class="h-[30px] md:h-[35px] w-auto" src="../../static/images/logo.png" />
+        </a>
+
+
+        <button id="htmlButtonMenuCategory"
+          class="sm:block hidden order-2 text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-[#e11c1c]">
+          <i class="fa-solid fa-bars text-[20px] lg:text-[22px]"></i><br />
+          <span class="hidden md:block leading-tight text-[14px]">Danh mục</span>
+        </button>
+
+        <button data-hs-overlay="#modalMenuCategory"
+          class="block sm:hidden order-2 text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-[#e11c1c]">
+          <i class="fa-solid fa-bars text-[20px] lg:text-[22px]"></i><br />
+        </button>
+
+
+
+        <div class="relative flex-grow order-4 md:order-3 md:py-0">
+          <form method="get" action="{% url 'home:search_product_pages' %}"
+            class="relative flex items-center justify-center text-black">
+            <input id="input_search" class="min-w-[250px] md:min-w-[200px] w-full h-[30px] md:h-[35px] px-[15px] outline-none 
+                  md:placeholder:text-[14px] placeholder:text-[12px] rounded-[5px] text-[14px]"
+              placeholder="Bạn muốn tìm gì ?" name="q" value="" />
+            <button type="submit" class="absolute top-[8px] right-[10px]">
+              <i class="fa-solid fa-magnifying-glass text-[18px]"></i>
+            </button>
+
+          </form>
+          <ul id="menu_search" class="absolute hidden top-full left-0 z-10 bg-white text-black border rounded-[5px]
+                p-[10px] w-full space-y-[10px] mt-[5px]">
+            <div class="text-red-500 font-medium bg-[#f3f3f3] px-[5px] py-[10px] rounded-[5px]">
+              <i class="fa-solid fa-fire-flame-curved"></i>
+              <span>Xu hướng tìm kiếm</span>
+              <i class="fa-solid fa-fire-flame-curved"></i>
+            </div>
+            <div class="">
+              <div class="flex space-x-[10px] p-[10px] rounded-[5px] bg-white hover:bg-slate-200">
+                <div class="aspect-square h-[60px] w-[60px] rounded-[5px]">
+                  <img class="w-full h-full object-cover rounded-[5px]"
+                    src="https://images.fpt.shop/unsafe/filters:quality(90):fill(white)/fptshop.com.vn/Uploads/Originals/2024/2/29/638448464173065252_banner%20(3).png" />
+                </div>
+                <div class="font-medium">
+                  <h1>Trong đoạn mã trên, chúng ta sử dụng phương thức filter để lọc các đối tượng từ </h1>
+                </div>
+              </div>
+
+            </div>
+          </ul>
+        </div>
+        <div class="flex items-center justify-center order-3 md:order-4">
+
+          <!-- START ICON PHONE -->
+          <div class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-[#e11c1c] ">
+            <a href="tel:+84947774777"><i class="fa-solid fa-phone text-[20px] lg:text-[22px]"></i></a>
+            <a href="tel:+84947774777" class="hidden md:block leading-tight">Liên hệ</a>
+          </div>
+          <!-- END ICON PHONE -->
+
+          <!-- START ICON CART -->
+          <a href="" class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-[#e11c1c] ">
+            <div class="relative">
+              <i class="fa-solid fa-cart-shopping text-[20px] lg:text-[22px]"></i>
+              <div id="htmlCartIcon" class="absolute top-[-5px] right-[-8px] md:top-[-5px] md:right-0 border
+                 bg-blue-500 text-white px-[6px] rounded-full">
+                <span>5</span>
+              </div>
+            </div>
+            <span class="hidden md:block leading-tight">Giỏ hàng</span>
+          </a>
+          <!-- END ICON CART -->
+
+          <!-- START ICON LOGIN -->
+          <div class="text-center cursor-pointer p-[5px] rounded-[5px] hover:bg-[#e11c1c]"
+            data-hs-overlay="#htmlModalLogin">
+            <i class="fa-solid fa-circle-user text-[20px] lg:text-[22px]"></i><br />
+            <span class="hidden md:block leading-tight">Đăng nhập</span>
+          </div>
+          <!-- END ICON LOGIN -->
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-0 top-[60px] md:top-[80px] lg:top-[92px] z-10 hidden sm:flex items-start space-x-[5px] text-[12px] md:text-[14px]">
+        <div id="htmlMenuDropDownHeader" class="relative hidden p-[5px] font-[400] border  shadow-md rounded-[5px]
+          sm:w-[160px] md:w-[200px] bg-white">
+          <div class="dropdown ">
+            <a href="/"
+              class="flex items-center hover:bg-[#fff1f1] p-[10px] py-[5px] rounded-[5px] hover:text-[#e11c1c]">
+              <div class="flex-1 flex items-center space-x-[5px]">
+                <div class="w-[30px]">
+                  <i class="fa-solid fa-mobile-retro text-[20px] leading-none"></i>
+                </div>
+                <h5 class="leading-none">Điện thoại iphone 12 pro</h5>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </a>
+            <div class="dropdown_menu absolute left-full ml-[-10px] top-0 hidden
+              sm:w-[400px] md:w-[500px] lg:w-[700px] xl:w-[800px] ">
+              <div class="flex flex-wrap gap-[20px] bg-white border shadow-md rounded-[5px] ml-[20px] p-[10px]">
+                <div class="space-y-[2px]">
+                  <strong class="font-medium">Thương hiệu điện thoại</strong>
+                  <div>
+                    <a href="/" class="hover:text-[#0e92f7]">
+                      <h4>Iphone</h4>
+                    </a>
+                    <a href="/" class="hover:text-[#0e92f7]">
+                      <h4>Oppo</h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="pt-[110px] sm:pt-[90px] md:pt-[110px] lg:pt-[120px] h-[1000px]">
+    <h1 class="text-[#358816]">OK</h1>
+    <h2 class="text-[#f59e0b]"></h2>
+  </div>
+
+  <div class="hiddenXScroll font-[400] space-x-[5px] md:hidden
+        flex items-center justify-start overflow-x-auto w-full">
+        <a href="">
+          <div class="h-[25px] sm:h-[30px] px-[10px] flex items-center justify-center text-center border border-[#e5e7eb] rounded-[5px] bg-[#f3f4f6]
+          hover:bg-[#ed1c24] hover:text-white transition duration-500 ease-in-out whitespace-nowrap">
+            <small>Điện thoại Iphone</small>
+          </div>
+        </a>
+      </div>
+      <div class="hiddenXScroll flex-1 font-[400] space-x-[5px] hidden md:flex items-center justify-end overflow-x-auto">
+        <a href="">
+          <div class="h-[25px] sm:h-[30px] px-[10px] flex items-center justify-center text-center border border-[#e5e7eb] rounded-[5px] bg-[#f3f4f6]
+          hover:bg-[#ed1c24] hover:text-white transition duration-500 ease-in-out whitespace-nowrap">
+            <small>Điện thoại Iphone</small>
+          </div>
+        </a>
+      </div>
+  <!-- END HEADER -->
+
+  <!-- MODAL LOGIN -->
+  <div class="flex items-center justify-center">
+    <div id="modal_login"
+      class="hs-overlay hidden size-full fixed top-0 z-50 overflow-x-hidden overflow-y-auto pointer-events-none">
+      <div
+        class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 mt-14 opacity-0 ease-out transition-all w-[300px] sm:w-[400px]">
+        <div
+          class="flex flex-col bg-white border shadow-sm rounded-[10px] pointer-events-auto p-[20px] space-y-[10px] text-[12px] sm:text-[14px]">
+          <div class="flex justify-between items-center p-[10px] border-b">
+            <h3 class="font-bold text-gray-800">
+              ĐĂNG NHẬP HOẶC TẠO TÀI KHOẢN
+            </h3>
+            <button disabled type="button"
+              class="hs-dropup-toggle flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+              data-hs-overlay="#modal_login">
+              <i class="fa-solid fa-circle-xmark text-[20px]"></i>
+            </button>
+          </div>
+          <div class="text-center space-y-[10px]">
+            <div class="flex items-center justify-center">
+              <img alt="vietphone" title="vietphone" src="{% static 'images/login.png' %}"
+                class="w-[150px] h-[150px] sm:h-[200px] sm:w-[200px]" />
+            </div>
+            <div class="text-gray-600">
+              <span>Nhập số điện thoại mua hàng để hưởng đặc quyền riêng tại
+                <span class="text-red-500 font-medium">VIETPHONE.VN</span>
+              </span>
+            </div>
+            <input
+              class="w-full h-[40px] border-gray-300 border-[2px] focus:outline-none focus:border-blue-500 rounded-[5px] px-[20px] ease-in-out transition duration-500 hover:border-blue-500"
+              placeholder="Nhập số điện thoại" />
+            <button disabled
+              class="bg-red-600 px-[20px] py-[10px] rounded-[5px] text-white hover:bg-red-700 ease-in-out transition duration-500">
+              TIẾP TỤC
+              <i id="icon_spin" class="fa-solid fa-spinner animate-spin hidden"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex items-center justify-center w-full h-screen">
+    <div id="modalMenuCategory"
+      class="hs-overlay hidden size-full fixed top-0 z-50 overflow-x-hidden overflow-y-auto pointer-events-none w-full h-full">
+      <div class="hs-overlay-open:mt-7 hs-overlay-open:opacity-100 hs-overlay-open:duration-500 
+        mt-14 opacity-0 ease-out transition-all w-full h-full">
+
+        <div class="flex flex-col bg-white border shadow-sm rounded-[10px] pointer-events-auto
+          text-[12px] p-[10px] space-y-[10px] h-full">
+
+          <div class="flex justify-between items-center pb-[10px] border-b">
+            <span class="font-bold text-gray-800">
+              MENU DANH MỤC
+            </span>
+            <button disabled type="button"
+              class="hs-dropup-toggle flex justify-center items-center size-7 text-sm font-semibold rounded-full border border-transparent text-gray-800 hover:bg-gray-100 disabled:opacity-50 disabled:pointer-events-none"
+              data-hs-overlay="#modalMenuCategory">
+              <i class="fa-solid fa-circle-xmark text-[20px]"></i>
+            </button>
+          </div>
+          <div class="absolute top-[70px] space-y-[5px]">
+            <div class="relative font-[400]">
+              <div class="dropdown w-[80px] relative rounded-[5px] border">
+                <a href="/" class=" text-center">
+                  <div class="py-[5px]">
+                    <i class="fa-solid fa-mobile-retro text-[20px] leading-none"></i>
+                    <h5 class="leading-none line-clamp-1">Điện thoại iphone</h5>
+                  </div>
+                </a>
+                <div class="dropdown_menu absolute left-full ml-[-10px] top-0 hidden w-[300px]">
+                  <div class="flex flex-wrap gap-[20px] bg-white border shadow-md rounded-[5px] ml-[20px] p-[5px]">
+                    <div class="space-y-[2px]">
+                      <strong class="font-medium">Thương hiệu điện thoại</strong>
+                      <div>
+                        <a href="/" class="hover:text-[#0e92f7]">
+                          <h4>Iphone</h4>
+                        </a>
+                        <a href="/" class="hover:text-[#0e92f7]">
+                          <h4>Oppo</h4>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  document.addEventListener('scroll', function () {
+    const scrollPosition = window.scrollY;
+    const htmlBannerHeader = document.getElementById('htmlBannerHeader');
+    const htmlHeaderNav = document.getElementById('htmlHeaderNav');
+    if (scrollPosition > 0) {
+      htmlBannerHeader.style.display = 'none';
+    } else {
+      htmlBannerHeader.style.display = 'block';
+    }
+  });
+</script>
+<script>
+  const htmlMenuDropDownHeader = document.getElementById('htmlMenuDropDownHeader');
+  const htmlButtonMenuCategory = document.getElementById('htmlButtonMenuCategory');
+  let visibleMenu = false;
+  document.addEventListener('click', function (event) {
+    let target = event.target;
+    if (!target.closest('#htmlButtonMenuCategory')) {
+      if (visibleMenu) {
+        htmlMenuDropDownHeader.classList.add('hidden');
+        visibleMenu = false;
+      }
+    }
+  });
+  htmlButtonMenuCategory.addEventListener('click', (event) => {
+    if (visibleMenu) {
+      htmlMenuDropDownHeader.classList.add('hidden');
+    } else {
+      htmlMenuDropDownHeader.classList.remove('hidden');
+    }
+    visibleMenu = !visibleMenu;
+    event.stopPropagation();
+  })
+</script>
+<script src="../../static/js/header.js"></script>
+<!-- Preline dùng chung-->
+<script src="../../../node_modules/preline/dist/preline.js"></script>
+<!-- Glide dùng index-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+</html>
