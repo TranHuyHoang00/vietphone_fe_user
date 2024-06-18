@@ -57,7 +57,7 @@
                                 <img src="../../static/images/10.jpg"
                                     class="w-full h-[160px] sm:h-[280px] object-cover" />
                             </li>
-                           
+
                         </ul>
                     </div>
                     <div class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2 text-white"
@@ -81,7 +81,8 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden lg:flex flex-col col-span-2 h-[340px] space-y-[10px] p-[10px] bg-white rounded-[10px] shadow-md border">
+            <div
+                class="hidden lg:flex flex-col col-span-2 h-[340px] space-y-[10px] p-[10px] bg-white rounded-[10px] shadow-md border">
                 <div class="flex-1 rounded-[5px] overflow-hidden flex items-center justify-center h-[100px]">
                     <div class=" w-full relative overflow-hidden slider_banner1">
                         <div class="overflow-hidden" data-glide-el="track">
@@ -136,6 +137,37 @@
             </div>
         </div>
     </div>
+
+    <div class="bg-white shadow-md rounded-[10px] border p-[10px] sm:p-[20px] space-y-[10px] text-[12px] sm:text-[14px] md:text-[16px]">
+        <span class="font-medium">THÔNG TIN TUYỂN DỤNG</span>
+        <div class=" w-full relative overflow-hidden slider_banner5">
+            <div class="overflow-hidden" data-glide-el="track">
+                <ul class="relative overflow-hidden whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] 
+                    [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]">
+                    <a href="/" class="flex gap-[5px] md:gap-[10px]">
+                        <div class="flex-shrink-0 aspect-[3/2] h-[60px] md:h-[80px]">
+                            <img class="h-full w-full object-cover rounded-[5px]"
+                                src="https://cdn.tuoitre.vn/zoom/260_163/471584752817336320/2024/6/14/le-thanh-nguyen-van-dong-1718330697944426659617-125-0-661-858-crop-17183307189281157129129.jpg" />
+                        </div>
+                        <div class="flex-1 sm:space-y-[5px]">
+                            <h4 class="line-clamp-2 font-medium">Bắt nghi phạm xông vào nhà
+                                chém người tử vong ở Bạc Liêu</h4>
+                            <div class="flex items-center gap-[10px]">
+                                <div class="font-[400] italic">
+                                    <i class="fa-regular fa-clock text-[12px]"></i>
+                                    <span class="text-[12px]">12/02/2024</span>
+                                </div>
+                                <div class="bg-[#ed1c24] px-[5px] py-[4px] rounded-[5px]">
+                                    <img class="h-[16px] sm:h-[20px] w-auto" src="../../static/images/logo.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
     <script>
         function matchWidth() {
@@ -188,6 +220,21 @@
             classes: { activeNav: "[&>*]:text-red-600" },
         });
         slider_banner4.mount();
+
+        var slider_banner5 = new Glide(".slider_banner5", {
+            type: "carousel",
+            focusAt: "center",
+            perView: 3,
+            autoplay: 2000,
+            animationDuration: 700,
+            gap: 10,
+            classes: { activeNav: "[&>*]:text-red-600" },
+            breakpoints: {
+                1240: { perView: 2 },
+                640: { perView: 1 },
+            },
+        });
+        slider_banner5.mount();
     </script>
 </body>
 
